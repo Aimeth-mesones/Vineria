@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Mi Vineria</title>
+</head>
+
+<body>
+  <header>
+    <section><!-- NAVEGACION -->
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img src="./multimedia/logo.png" alt="Logo vineria">
+        </a>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Que estas buscando" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+      <!-- BARRA DE NAVEGACION -->
+      <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bodegas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Regalos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Vinos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vinos Tintos</a></li>
+                  <li><a class="dropdown-item" href="#">Vinos Blancos</a></li>
+                  <li><a class="dropdown-item" href="#">Vinos Espumantes</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> <!--FIN DE LA BARRA DE NAVEGACION -->
+
+    </section>
+  </header>
+  <main>
+    <!-- INICIO CAROUSEL -->
+
+    <div id="carouselAuto" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselAuto" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselAuto" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselAuto" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(../multimedia/carouselimageuno.jpg);">
+          <div class="fondo"></div>
+          <div class="contenidoCarousel">
+            <div class="gift">
+              <img src="./multimedia/gift card.png" alt="">
+            </div>
+            <div class="textoGift">
+              <p class="tituloCarousel">GIFT CARD</p>
+              <p class="tituloDosCarousel">Regala momentos</p>
+              <p class="tituloTresCarousel">Elige el valor, cargala y listo! Encuentrala en nuestra tienda</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(./multimedia/carouselimagedos.jpg);">
+          <div class="fondo"></div>
+          <div class="contenidoCarouselDos">
+            <div class="descripcionPromo">
+              <div class="textoPromo">
+                <p class="tituloCarousel">Etiqueta Dorada</p>
+                <p class="tituloDosCarousel">Promo Otoño-Invierno</p>
+                <p class="tituloTresCarousel">En articulos seleccionados</p>
+                <button type="button" class="btn btn-dark">Ver Promos</button>
+              </div>
+              <div class="textoDescuento">
+                <div class="formaDescuento">
+                  <p>Hasta</p>
+                  <p>35% OFF</p>
+                </div>
+              </div>
+            </div>
+            <div class="condicionDescuento">
+              <p>Beneficio exclusivo para compras en tienda</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item" style="background-image: url(./multimedia/carouselimagetres.png);">
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAuto" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselAuto" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <!--FIN DEL CAROUSEL-->
+
+
+
+
+
+
+
+    <!-- INICIO DE LAS CARTAS -->
+    <section class="tarjetas">
+      <div class="card-group">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- CARTA 1 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Precio</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARTA 2 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Precio</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARTA 3 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Precio</p>
+
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARTA 4 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+
+              <div class="row g-0">
+                <div class="col-md-4">
+
+                  <img src="./multimedia/trapiche-reserva-chardonnay.jpg" class="img-fluid rounded-start"
+                    alt="Trapiche reserva">
+                  <a href="#" class="card-link">Ver Detalle</a>
+
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Trapiche Reserva</h5>
+                    <p class="card-text">De color amarillo verdoso, este vino expresa aromas a peras y pastel de
+                      manzana,
+                      con un dejo de pan tostado.
+                      En boca presenta una buena frescura, y es vibrante y mineral con un final muy untuoso.</p>
+                    <p class="card-text">Precio: $1.613,41</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- C ARTA 5 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div>
+                    <img src="./multimedia/EL-ESTECO-Blanc-de-Blancs.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">El Esteco Blanc de Blancs</h5>
+                    <p class="card-text">De color amarillo intenso profundo con notas verdosas. Aroma de
+                      fruta tropical pero fresca, mineral, muy elegante. Excelente balance de acidez
+                      y dulzura en boca.
+                    </p>
+                    <p class="card-text">Precio: $14.631,49 </p>
+
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARTA 6 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <div>
+                    <p class="forma">30% OFF</p>
+                    <img src="./multimedia/coleccionprivadasauvinionblanc.png" class="img-fluid rounded-start"
+                      alt="...">
+                  </div>
+
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Navarro Correas</h5>
+                    <p class="card-text">De color amarillo pálido con reflejos verdes y plata. Aromas a
+                      pomelo rosado, maracuyá, espárrago, notas de flores blancas.
+
+                      En boca, gran balance entre la fruta, las notas florales y la acidez. Fresco y persistente. </p>
+                    <p class="card-text">Precio: $605,24</p>
+
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARTA 7 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">titulo</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Precio</p>
+
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- CARTA 8 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Precio</p>
+
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARTA 9 -->
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                  <a href="#" class="card-link">Ver Detalle</a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Precio</p>
+
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalle de Vinos -->
+    <section class="detalles">
+      <div class="card" style="width: 18rem;">
+        <img src="./multimedia/trapiche-reserva-chardonnay.jpg" class="card-img-top"
+          alt="Vino Trapiche reserva chardonnay">
+        <div class="card-body">
+          <p class="card-text">Vino Trapiche Reserva Chardonnay</p>
+        </div>
+      </div>
+      <!-- FICHA TECNICA -->
+      <div class="card text-center personalizada">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#">FICHA TÉCNICA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACERCA DE LA LINEA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">OPINIONES</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <table class="table table-dark table-hover">
+            <tbody>
+              <tr>
+                <th scope="row">Bodega:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Región:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Viñedo:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Crianza:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Notas de Cata:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Tipo de productos:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Varietal:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Presentación:</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Tiempo de Crianza:</th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          </table>
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
