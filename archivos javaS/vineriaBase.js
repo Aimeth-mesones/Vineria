@@ -1,6 +1,6 @@
 {
     "vinos"=[
-        {
+        {//Victoria
             "id":1,
             "imagen":"",//nombre de la imagen
             "nombre":"",//nombre del vino
@@ -51,7 +51,7 @@
             "tiempo de crianza":"",   
             "info" :"",
         },
-        {
+        {//Yormaris
             "id":4,
             "imagen":"",
             "nombre":"",
@@ -102,7 +102,7 @@
             "tiempo de crianza":"",   
             "info" :"",
         },
-        {
+        {//Vasty
             "id":7,
             "imagen":"",
             "nombre":"",
@@ -153,7 +153,7 @@
             "tiempo de crianza":"",   
             "info" :"",
         },
-        {
+        {//Samantha
             "id":10,
             "imagen":"",
             "nombre":"",
