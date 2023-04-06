@@ -7,6 +7,7 @@ body,html{
     width: 100%;
     height: 100%;
 }
+/* ESTILOS DEL HEADER */
 header{
     width: 100vw;
     height: auto;
@@ -15,7 +16,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-/* ELEMENTOS DEL HEADER */
+
 .logo{
     background-color: black;
     display: flex;
@@ -40,6 +41,8 @@ header{
     align-items: center;
     
 }
+/* ESTILOS DEL MAIN */
+/* main general */
 
 main{
     height: auto;
@@ -186,15 +189,47 @@ main{
     border-color:#B1A303 ;
 }
 /* CARTAS */
-.card-group{
-display: flex;
-flex-direction: column;
-width: 90%;
-margin: 20px 5% 30px 5%;
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 10px;
+  margin-top: 25px;
+}
+.col-md-8{
+    display: flex;
+}
+.col-md-4{
+    width: 116px;
+    height: 344px;
 }
 
-.card{
+.card {
     text-align: justify;
+    height: auto;
+    width: 350px;
+    justify-content: space-between;
+
+    box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img-carta{
+    width: 80%;
+    height: auto;
+    margin:2% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card>img {
+    display: block;
 }
 
 .form{
@@ -218,7 +253,7 @@ margin: 20px 5% 30px 5%;
     font-weight: bold;
     color:antiquewhite;
 }
-
+/* ESTILOS DE LA SECCION DETALLES DE LOS VINOS */
 .detalles{
 display: flex;
 width: 80%;
@@ -233,12 +268,8 @@ column-gap: 40px;
     width: 50%;
     height: auto;
 }
+/* alineacion de la tabla de ficha tecnica */
 .text-center{
     text-align: left !important;
 }
-.card{
-    box-shadow: 10px 13px 3px -6px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 13px 3px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 13px 3px -6px rgba(0,0,0,0.75);;
 
-}
