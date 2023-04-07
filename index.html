@@ -18,54 +18,54 @@
 
 <body>
   <header>
-    <section><!-- NAVEGACION -->
+    <section class="encabezado"><!-- NAVEGACION -->
       <div class="logo">
-        <a class="navbar-brand" href="#">
-          <img src="./multimedia/logo.png" alt="Logo vineria">
-        </a>
-
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Que estas buscando" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+        <img src="./multimedia/Logo_vinoteca_Mesa_de_trabajo_1-01.png" alt="Logo vineria">
       </div>
-      <!-- BARRA DE NAVEGACION -->
-      <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Que estas buscando" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </section>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bodegas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Regalos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Vinos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Vinos Tintos</a></li>
-                  <li><a class="dropdown-item" href="#">Vinos Blancos</a></li>
-                  <li><a class="dropdown-item" href="#">Vinos Espumantes</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bodegas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Regalos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Vinos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Vinos Tintos</a></li>
+                <li><a class="dropdown-item" href="#">Vinos Blancos</a></li>
+                <li><a class="dropdown-item" href="#">Vinos Espumantes</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav> <!--FIN DE LA BARRA DE NAVEGACION -->
+      </div>
+    </nav> <!--FIN DE LA BARRA DE NAVEGACION -->
 
     </section>
   </header>
@@ -144,369 +144,377 @@
     <!-- INICIO DE LAS CARTAS -->
     <section class="tarjetas">
       <div class="row row-cols-3 g-4">
-            <!-- CARTA 1 -->
-            <div class="col">
-              <div class="card mb-3 h-100" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4" style="background-image:url(./multimedia/Vino\ Tinto\ Rutini3.jpg);background-repeat: no-repeat; background-size: cover;" class="img-fluid">
-                    <!-- <img src="./multimedia/Vino Tinto Rutini.jpg" class="img-fluid rounded-start" alt="Vino tinto Rutini">  -->
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Tinto Rutini</h5>
-                      <p class="text-muted">Rutini Wines</p>
-                      <p class="card-text">De color Rojo rubí profundo.
-                        combina dos cepas:
-                        la Cabernet Sauvignon que entrega su carácter corpóreo y pleno, y la Malbec matiza con
-                        taninos
-                        suaves y dulces,
-                        realzando la combinación de aromas y sabores frutados.
-                      </p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio $4.700</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+        <!-- CARTA 1 -->
+        <div class="col">
+          <div class="card mb-3 h-100" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4"
+                style="background-image:url(./multimedia/Vino\ Tinto\ Rutini3.jpg);background-repeat: no-repeat; background-size: cover;"
+                class="img-fluid">
+                <!-- <img src="./multimedia/Vino Tinto Rutini.jpg" class="img-fluid rounded-start" alt="Vino tinto Rutini">  -->
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Tinto Rutini</h5>
+                  <p class="text-muted">Rutini Wines</p>
+                  <p class="card-text">De color Rojo rubí profundo.
+                    combina dos cepas:
+                    la Cabernet Sauvignon que entrega su carácter corpóreo y pleno, y la Malbec matiza con
+                    taninos
+                    suaves y dulces,
+                    realzando la combinación de aromas y sabores frutados.
+                  </p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio $4.700</p>
                 </div>
               </div>
             </div>
-    
-            <!-- CARTA 2 -->
-            <div class="col">
-              <div class="card mb-3 h-100" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4" style="background-image: url(./multimedia/vino\ malbec.jpg) ;background-repeat: no-repeat; background-size: cover;" class="img-fluid">
-                    <!-- <img src="./multimedia/vino malbec.jpg" class="img-fluid rounded-start" -->
-                      <!-- alt="Vino Trapiche Gran Medalla Malbec"> -->
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Gran Medalla Malbec</h5>
-                      <p class="text-muted">Trapiche</p>
-                      <p class="card-text">De color rojo púrpura, este vino presenta un fino bouquet con aromas
-                        de cerezas negras, ciruelas, notas de lavanda, especias y minerales. En boca es voluminoso,
-                        exhibiendo una elegante personalidad.</p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio $11.192</p>
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
-            <!-- CARTA 3 -->
-            <div class="col">
-              <div class="card mb-3 h-100" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4" style="background-image: url(./multimedia/vino\ el\ esteco.jpg); background-repeat: no-repeat ;background-size: cover;">
-                    <!-- <img src="./multimedia/vino el esteco.jpg" class="img-fluid rounded-start" alt="Vino el esteco"> -->
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Fincas Notables</h5>
-                      <p class="text-muted">El Esteco</p>
-                      <p class="card-text">De color profundo, fondo negro y reflejos violetas. Aroma muy frutado y con
-                        notas
-                        florales,
-                        Ciruelas, pasas de uvas, leves notas de hierbas y notas delicadas de roble .
-                        En boca entrada con mucho volumen. De persistencia larga y
-                        elegante.</p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio $7.889</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+          </div>
+        </div>
+
+        <!-- CARTA 2 -->
+        <div class="col">
+          <div class="card mb-3 h-100" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4"
+                style="background-image: url(./multimedia/vino\ malbec.jpg) ;background-repeat: no-repeat; background-size: cover;"
+                class="img-fluid">
+                <!-- <img src="./multimedia/vino malbec.jpg" class="img-fluid rounded-start" -->
+                <!-- alt="Vino Trapiche Gran Medalla Malbec"> -->
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Gran Medalla Malbec</h5>
+                  <p class="text-muted">Trapiche</p>
+                  <p class="card-text">De color rojo púrpura, este vino presenta un fino bouquet con aromas
+                    de cerezas negras, ciruelas, notas de lavanda, especias y minerales. En boca es voluminoso,
+                    exhibiendo una elegante personalidad.</p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio $11.192</p>
                 </div>
               </div>
             </div>
-            <!-- CARTA 4 -->
-            <div class="col">
-              <div class="card mb-3 h-100" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4" style="background-image: url(./multimedia/trapiche-reserva-chardonnay.jpg); background-repeat: no-repeat;background-size: cover;">
-                    <!-- <img src="./multimedia/trapiche-reserva-chardonnay.jpg" class="img-fluid rounded-start"
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CARTA 3 -->
+        <div class="col">
+          <div class="card mb-3 h-100" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4"
+                style="background-image: url(./multimedia/vino\ el\ esteco.jpg); background-repeat: no-repeat ;background-size: cover;">
+                <!-- <img src="./multimedia/vino el esteco.jpg" class="img-fluid rounded-start" alt="Vino el esteco"> -->
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Fincas Notables</h5>
+                  <p class="text-muted">El Esteco</p>
+                  <p class="card-text">De color profundo, fondo negro y reflejos violetas. Aroma muy frutado y con
+                    notas
+                    florales,
+                    Ciruelas, pasas de uvas, leves notas de hierbas y notas delicadas de roble .
+                    En boca entrada con mucho volumen. De persistencia larga y
+                    elegante.</p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio $7.889</p>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CARTA 4 -->
+        <div class="col">
+          <div class="card mb-3 h-100" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4"
+                style="background-image: url(./multimedia/trapiche-reserva-chardonnay.jpg); background-repeat: no-repeat;background-size: cover;">
+                <!-- <img src="./multimedia/trapiche-reserva-chardonnay.jpg" class="img-fluid rounded-start"
                       alt="Trapiche reserva"> -->
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Trapiche Reserva</h5>
-                      <p class="text-muted">Trapiche</p>
-                      <p class="card-text">De color amarillo verdoso, este vino expresa aromas a peras y pastel de
-                        manzana,
-                        con un dejo de pan tostado.
-                        En boca presenta una buena frescura, y es vibrante y mineral con un final muy untuoso.</p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio: $2307</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Trapiche Reserva</h5>
+                  <p class="text-muted">Trapiche</p>
+                  <p class="card-text">De color amarillo verdoso, este vino expresa aromas a peras y pastel de
+                    manzana,
+                    con un dejo de pan tostado.
+                    En boca presenta una buena frescura, y es vibrante y mineral con un final muy untuoso.</p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio: $2307</p>
                 </div>
               </div>
             </div>
-    
-            <!-- CARTA 5 -->
-            <div class="col">
-              <div class="card mb-3 h-100" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4" style="background-image: url(./multimedia/EL-ESTECO-Blanc-de-Blancs.png); background-repeat: no-repeat;background-size: cover;">
-                    <!-- <div>
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARTA 5 -->
+        <div class="col">
+          <div class="card mb-3 h-100" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4"
+                style="background-image: url(./multimedia/EL-ESTECO-Blanc-de-Blancs.png); background-repeat: no-repeat;background-size: cover;">
+                <!-- <div>
                       <img src="./multimedia/EL-ESTECO-Blanc-de-Blancs.png" class="img-fluid rounded-start" alt="...">
                     </div> -->
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">El Esteco Blanc de Blancs</h5>
-                      <p class="text-muted">El Esteco</p>
-                      <p class="card-text">De color amarillo intenso profundo con notas verdosas. Aroma de
-                        fruta tropical pero fresca, mineral, muy elegante. Excelente balance de acidez
-                        y dulzura en boca.
-                      </p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio: $14.631 </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">El Esteco Blanc de Blancs</h5>
+                  <p class="text-muted">El Esteco</p>
+                  <p class="card-text">De color amarillo intenso profundo con notas verdosas. Aroma de
+                    fruta tropical pero fresca, mineral, muy elegante. Excelente balance de acidez
+                    y dulzura en boca.
+                  </p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio: $14.631 </p>
                 </div>
               </div>
             </div>
-            <!-- CARTA 6 -->
-            <div class="col">
-              <div class="card mb-3 h-100" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4" style="background-image: url(./multimedia/coleccionprivadasauvinionblanc.png); background-repeat:no-repeat;background-size: cover;">
-                    <div>
-                      <p class="forma">30% OFF</p>
-                      <!-- <img src="./multimedia/coleccionprivadasauvinionblanc.png" class="img-fluid rounded-start" alt="..."> -->
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Coleccion Privada</h5>
-                      <p class="text-muted">Navarro Correas</p>
-                      <p class="card-text">De color amarillo pálido con reflejos verdes y plata. Aromas a
-                        pomelo rosado, maracuyá, espárrago, notas de flores blancas.
-                        En boca, gran balance entre la fruta, las notas florales y la acidez. Fresco y persistente. </p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio: $605</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- CARTA 7 -->
-            <div class="col">
-              <div class="card mb-3 h-100" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">titulo</h5>
-                      <p class="text-muted">bodega</p>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio:</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- CARTA 8 -->
-            <div class="col">
-              <div class="card mb-3 h-100 " style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="text-muted">bodega</p>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio:</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- CARTA 9 -->
-            <div class="col">
-              <div class="card mb-3 h-100 " style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="text-muted">bodega</p>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <a href="#" class="card-link">Ver Detalle</a>
-                      <p class="card-text">Precio:</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-12">
-                    <div class="card-footer">
-                      <form>
-                        <div class="row">
-                          <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                          <div class=" col-sm-3">
-                            <input type="number" class="form-control" id="cantidad" placeholder="1">
-                          </div>
-                          <div class="col-sm-5">
-                            <button type="submit" class="btn btn-primary">Comprar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <!-- CARTA 6 -->
+        <div class="col">
+          <div class="card mb-3 h-100" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4"
+                style="background-image: url(./multimedia/coleccionprivadasauvinionblanc.png); background-repeat:no-repeat;background-size: cover;">
+                <div>
+                  <p class="forma">30% OFF</p>
+                  <!-- <img src="./multimedia/coleccionprivadasauvinionblanc.png" class="img-fluid rounded-start" alt="..."> -->
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Coleccion Privada</h5>
+                  <p class="text-muted">Navarro Correas</p>
+                  <p class="card-text">De color amarillo pálido con reflejos verdes y plata. Aromas a
+                    pomelo rosado, maracuyá, espárrago, notas de flores blancas.
+                    En boca, gran balance entre la fruta, las notas florales y la acidez. Fresco y persistente. </p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio: $605</p>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
+        <!-- CARTA 7 -->
+        <div class="col">
+          <div class="card mb-3 h-100" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">titulo</h5>
+                  <p class="text-muted">bodega</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio:</p>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CARTA 8 -->
+        <div class="col">
+          <div class="card mb-3 h-100 " style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="text-muted">bodega</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio:</p>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CARTA 9 -->
+        <div class="col">
+          <div class="card mb-3 h-100 " style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="text-muted">bodega</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <a href="#" class="card-link">Ver Detalle</a>
+                  <p class="card-text">Precio:</p>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12">
+                <div class="card-footer">
+                  <form>
+                    <div class="row">
+                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
+                      <div class=" col-sm-3">
+                        <input type="number" class="form-control" id="cantidad" placeholder="1">
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
     </section>
 
     <!-- Detalle de Vinos -->
