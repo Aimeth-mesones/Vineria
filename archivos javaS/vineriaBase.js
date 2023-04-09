@@ -1,52 +1,52 @@
 {
     "vinos" = [
-        {//Victoria
+        {
             "id": 1,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas de cata": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo de productos": "",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo de crianza": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+            "imagen": "Vino\ Tinto\ Rutini3.jpg",
+            "nombre": "Rutini",
+            "precio":4700,
+            "bodega": "La Rural",
+            "region": "Mendoza",
+            "viñedo": "Valle de Uco",
+            "notas de cata": "De color Rojo rubí profundo. El dúo de cepas de origen francés da como resultado un tinto armonioso y equilibrado: la Cabernet Sauvignon entrega su carácter corpóreo y pleno, y la Malbec matiza el corte con taninos suaves y dulces, realzando una combinación única",
+            "tipo de productos": "Vino Tinto",
+            "varietal": "Malbec",
+            "presentacion": "750 ml",
+            "crianza": "Roble Frances",
+            "tiempo de crianza": "12 meses", 
+            "info": "Ideal para disfrutar en compañía.,Carnes rojas asadas,tabla de quesos semiduros: Pategras,Fontina,Gruyere,Emmental,pastel de carne,pastas rellenas: sorrentinos,agnolottis,lasagna y comidas criollas: empanadas y todo tipo de cazuelas y Temperatura ideal de consumo: 15 °C",
         },
         {
             "id": 2,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas de cata": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo de productos": "",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo de crianza": "",  //cuanto tiempo pasa en barrica  
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+            "imagen": "vino\ malbec.jpg",
+            "nombre": "Gran Medalla Malbec",
+            "precio":11192,
+            "bodega": "Trapiche",
+            "region": "Mendoza",
+            "viñedo": "Finca Las Piedras, Los Árboles",
+            "notas de cata": "De color rojo púrpura, este vino presenta un fino bouquet con aromas de cerezas negras, ciruelas, notas de lavanda, especias y minerales. En boca es voluminoso, exhibiendo una elegante personalidad.",
+            "tipo de productos": "Vino Tinto",
+            "varietal": "Malbec",
+            "presentacion": "750 ml",
+            "crianza": "Roble francés",
+            "tiempo de crianza": "18 meses", 
+            "info": "Trapiche Gran Medalla nace para conmemorar los 125 años de la bodega. Fiel a su espíritu explorador y en la constante búsqueda de nuevos terroir, los enólogos de Trapiche llegaron al Valle de Uco, Mendoza, donde se encontraron vides que entregan ejemplares de excepción.",
         },
         {
             "id": 3,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas de cata": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo de productos": "",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo de crianza": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+            "imagen": "vino\ el\ esteco.jpg",
+            "nombre": "Fincas Notables",
+            "precio": 7889,
+            "bodega": "El Esteco",
+            "region": "Salta",
+            "viñedo": "Cafayate",
+            "notas de cata": "Color: Rojo con reflejos rubíes, profundo y fondo negro. Limpio y brillante. Lágrimas muy coloreadas. Aroma: Concentrado. Especiado, se destacan los pimientos morrones. Roble, chocolate negro, dulce de cassis. Limpio y persistente. Característico Cabernet Sauvignon Cafayateño. Sabor: Taninos de gran envergadura, maduros y sensaciones de tiza. Armónico con percepción de frutas negras y chocolate. Roble acompañando al vino. Rico. Persistencia larga y elegante.",
+            "tipo de productos": "Vino Tinto",
+            "varietal": "Cabernet Sauvignon",
+            "presentacion": "750 ml",
+            "crianza": "Roble Frances",
+            "tiempo de crianza": "15 meses",  
+            "info": "FINCAS NOTABLES es una línea de “Single Vineyards” que proviene de cuarteles especiales en nuestras fincas propias. Estos vinos exclusivos transmiten la perfecta fusión entre el cuidado de los viñedos, la sabiduría de la naturaleza y la sapiencia del trabajo.",
         },
         {//Yormaris
             "id": 4,
