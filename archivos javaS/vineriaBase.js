@@ -49,7 +49,7 @@
             "info": "FINCAS NOTABLES es una línea de “Single Vineyards” que proviene de cuarteles especiales en nuestras fincas propias. Estos vinos exclusivos transmiten la perfecta fusión entre el cuidado de los viñedos, la sabiduría de la naturaleza y la sapiencia del trabajo.",
         },
         {//Yormaris
-            "id": 4,
+            "id": 5,
             "imagen": "trapiche-reserva-chardonnay.jpg",
             "nombre": "Trapiche Reserva",
             "precio": 2307,
@@ -65,7 +65,7 @@
             "info": "Trapiche Reserva es la línea emblemática de la bodega que nace al pie de la Cordillera de Los Andes para transformarse en la mejor expresión de todo lo bueno que Trapiche tiene para dar. Un vino que se caracteriza por su delicadeza, armonía y complejidad, otorgadas por su crianza en roble francés y americano a lo largo de 6 meses. Ideal para acompañar una bondiola de cerdo asada con manzanas verdes y crema de limon. Marida a la perfección con fondue de queso, e incluso ensaladas de verano; se recomienda beberlo entre 4 y 6°C",
         },
         {
-            "id": 5,
+            "id": 6,
             "imagen": "EL-ESTECO-Blanc-de-Blancs.png",
             "nombre": "El Esteco Blanc de Blancs",
             "precio": 14631,
@@ -81,7 +81,7 @@
             "info": "Proviene de las fincas de la Bodega Esteco más selectas otorgando características de un terroir único. No solo se trata de un gran vino, se trata sobre la historia de la historia de Esteco en Cafayate. Sobre sus viñedos que rodean a la bodega y del cuidado de una tierra única. Marida muy bien con Mero a la plancha, papines confitados con eneldo y oregano, se recomienda beberlo entre 11º a 13ºC.",
         },
         {
-            "id": 6,
+            "id": 7,
             "imagen": "coleccionprivadasauvinionblanc.png",
             "nombre": "Coleccion Privada",
             "precio": 605,
@@ -97,38 +97,6 @@
             "info": "Colección Privada es la línea que nos recuerda que el arte de hacer nos permite explorar y encontrar siempre nuevas y mejores expresiones. us etiquetas exhiben obras de prestigiosos y emergentes artistas argentinos, creando así una amplia colección de obras de arte y vinos. Vinos de estilo frutado, textura aterciopelada y larga presencia en boca distinguen a esta línea de varietales. Ideal para acompañar pescados y mariscos. Platos con alta acidez, ceviche, encurtidos y vinagretas. Servir a 12°C.",
         },
         {//Vasty
-            "id": 7,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas de cata": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo de productos": "",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo de crianza": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
-        },
-        {
-            "id": 8,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas de cata": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo de productos": "",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo de crianza": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
-        },
-        {
             "id": 9,
             "imagen": "",//nombre de la imagen
             "nombre": "",//nombre del vino
@@ -144,7 +112,7 @@
             "tiempo de crianza": "",  //cuanto tiempo pasa en barrica 
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
-        {//Samantha
+        {
             "id": 10,
             "imagen": "",//nombre de la imagen
             "nombre": "",//nombre del vino
@@ -176,18 +144,50 @@
             "tiempo de crianza": "",  //cuanto tiempo pasa en barrica 
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
+        {//Samantha
+            "id": 4,
+            "imagen": "Vino-iscay.jpg",
+            "nombre": "Iscay",
+            "precio":39011.94,
+            "bodega": "Trapiche",
+            "region": "Mendoza",
+            "viñedo": "Cruz de Piedra, Maipú y Altamira, Valle de Uco",
+            "notas de cata": "De color púrpura intenso, este vino combina aromas a violetas, frutas rojas maduras, sutiles notas especiadas y taninos generosos. El Malbec y el Cabernet Franc hacen una perfecta combinación que resulta en un ejemplar elegante y de final diáfano.",
+            "tipo de productos": "Vino tinto",
+            "varietal": "Blend",
+            "presentacion": "6 x 750ml",
+            "crianza": "Roble francés",
+            "tiempo de crianza": "18 meses",
+            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+        },
+        {
+            "id": 8,
+            "imagen": "Vino-gran-medalla.jpg",
+            "nombre": "Gran Medalla",
+            "precio":11.192,
+            "bodega": "Trapiche",
+            "region": "Mendoza",
+            "viñedo": "Gualtallary, Valle de Uco",
+            "notas de cata": "Este Chardonnay expresa aromas de frutas tropicales, combinados con notas cítricas y de azahares y un leve toque de especias, madreselva y brioche. De gran concentración de fruta en boca, es fresco y de carácter mineral, con un final sensacional.",
+            "tipo de productos": "Vino Blanco",
+            "varietal": "Chardonnay",
+            "presentacion": "1x750",
+            "crianza": "Roble francés",
+            "tiempo de crianza": "9 meses",   
+            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+        },
         {
             "id": 12,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas de cata": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo de productos": "",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
+            "imagen": "vino-el-esteco-espumante.jpg",
+            "nombre": "El Esteco Champenoise",
+            "precio":9.269,
+            "bodega": "El Esteco",
+            "region": "Salta",
+            "viñedo": "Cafayate",
+            "notas de cata": "De color dorado con reflejos pálidos y burbujas pequeñas que demuestran fineza y calidad. Sus burbujas nos traen aromas de pan tostado, nos recuerda a levadura y frutos secos. En boca presenta buena acidez, cremoso y sedoso al paladar.",
+            "tipo de productos": "Vino espumante",
+            "varietal": "Brut Nature",
+            "presentacion": "6x1x750",
             "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
             "tiempo de crianza": "",  //cuanto tiempo pasa en barrica 
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
