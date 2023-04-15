@@ -49,7 +49,7 @@ var dataVitis={
             "info": "FINCAS NOTABLES es una línea de “Single Vineyards” que proviene de cuarteles especiales en nuestras fincas propias. Estos vinos exclusivos transmiten la perfecta fusión entre el cuidado de los viñedos, la sabiduría de la naturaleza y la sapiencia del trabajo.",
         },
         {//Yormaris
-            "id": 4,
+            "id": 5,
             "imagen": "trapiche-reserva-chardonnay.jpg",
             "nombre": "Trapiche Reserva",
             "precio": 2307,
@@ -65,7 +65,7 @@ var dataVitis={
             "info": "Trapiche Reserva es la línea emblemática de la bodega que nace al pie de la Cordillera de Los Andes para transformarse en la mejor expresión de todo lo bueno que Trapiche tiene para dar. Un vino que se caracteriza por su delicadeza, armonía y complejidad, otorgadas por su crianza en roble francés y americano a lo largo de 6 meses. Ideal para acompañar una bondiola de cerdo asada con manzanas verdes y crema de limon. Marida a la perfección con fondue de queso, e incluso ensaladas de verano; se recomienda beberlo entre 4 y 6°C",
         },
         {
-            "id": 5,
+            "id": 6,
             "imagen": "EL-ESTECO-Blanc-de-Blancs.png",
             "nombre": "El Esteco Blanc de Blancs",
             "precio": 14631,
@@ -81,7 +81,7 @@ var dataVitis={
             "info": "Proviene de las fincas de la Bodega Esteco más selectas otorgando características de un terroir único. No solo se trata de un gran vino, se trata sobre la historia de la historia de Esteco en Cafayate. Sobre sus viñedos que rodean a la bodega y del cuidado de una tierra única. Marida muy bien con Mero a la plancha, papines confitados con eneldo y oregano, se recomienda beberlo entre 11º a 13ºC.",
         },
         {
-            "id": 6,
+            "id": 7,
             "imagen": "coleccionprivadasauvinionblanc.png",
             "nombre": "Coleccion Privada",
             "precio": 605,
@@ -97,6 +97,8 @@ var dataVitis={
             "info": "Colección Privada es la línea que nos recuerda que el arte de hacer nos permite explorar y encontrar siempre nuevas y mejores expresiones. us etiquetas exhiben obras de prestigiosos y emergentes artistas argentinos, creando así una amplia colección de obras de arte y vinos. Vinos de estilo frutado, textura aterciopelada y larga presencia en boca distinguen a esta línea de varietales. Ideal para acompañar pescados y mariscos. Platos con alta acidez, ceviche, encurtidos y vinagretas. Servir a 12°C.",
         },
         {//Vasty
+<<<<<<< HEAD
+=======
             "id": 7,
             "imagen": "rose.png",
             "nombre": "Dolores Espumante Rosado",
@@ -129,6 +131,7 @@ var dataVitis={
             "info": "Dada N°7 Vino Espumante Torrontes Sweet, es un delicado espumante dulce natural elaborado con método Charmat.  Ideal para acompañar salmón con salsas cítricas o tartas de frutas.  Servir Entre 7 y 9°C.",
         },
         {
+>>>>>>> 0288cd043260ce7cebeb6e2aa26d8c3fb6f726cd
             "id": 9,
             "imagen": "dada_maracuya.jpeg",
             "nombre": "Espumante Dadá Maracuya Dulce",
@@ -144,7 +147,7 @@ var dataVitis={
             "tiempo": "12 meses",
             "info": "DADÁ es la marca más vanguardista de la Bodega, que ha logrado generar en Argentina la creación de una nueva categoría: sweet red. Vinos sensoriales y muy agradables que con gran éxito han marcado una ruptura en las convenciones típicas del vino.  Ideal para acompañar quesos estacionados como parmesano, gouda o sardo o foie gras o patés de sabores intensos. Servir entre 7 y 9°C.",
         },
-        {//Samantha
+        {
             "id": 10,
             "imagen": "",//nombre de la imagen
             "nombre": "",//nombre del vino
@@ -176,8 +179,52 @@ var dataVitis={
             "tiempo": "",  //cuanto tiempo pasa en barrica 
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
+        {//Samantha
+            "id": 4,
+            "imagen": "Vino-iscay.jpg",
+            "nombre": "Iscay",
+            "precio":39011.94,
+            "bodega": "Trapiche",
+            "region": "Mendoza",
+            "viñedo": "Cruz de Piedra, Maipú y Altamira, Valle de Uco",
+            "notas de cata": "De color púrpura intenso, este vino combina aromas a violetas, frutas rojas maduras, sutiles notas especiadas y taninos generosos. El Malbec y el Cabernet Franc hacen una perfecta combinación que resulta en un ejemplar elegante y de final diáfano.",
+            "tipo de productos": "Vino tinto",
+            "varietal": "Blend",
+            "presentacion": "6 x 750ml",
+            "crianza": "Roble francés",
+            "tiempo de crianza": "18 meses",
+            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+        },
+        {
+            "id": 8,
+            "imagen": "Vino-gran-medalla.jpg",
+            "nombre": "Gran Medalla",
+            "precio":11.192,
+            "bodega": "Trapiche",
+            "region": "Mendoza",
+            "viñedo": "Gualtallary, Valle de Uco",
+            "notas de cata": "Este Chardonnay expresa aromas de frutas tropicales, combinados con notas cítricas y de azahares y un leve toque de especias, madreselva y brioche. De gran concentración de fruta en boca, es fresco y de carácter mineral, con un final sensacional.",
+            "tipo de productos": "Vino Blanco",
+            "varietal": "Chardonnay",
+            "presentacion": "1x750",
+            "crianza": "Roble francés",
+            "tiempo de crianza": "9 meses",   
+            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+        },
         {
             "id": 12,
+<<<<<<< HEAD
+            "imagen": "vino-el-esteco-espumante.jpg",
+            "nombre": "El Esteco Champenoise",
+            "precio":9.269,
+            "bodega": "El Esteco",
+            "region": "Salta",
+            "viñedo": "Cafayate",
+            "notas de cata": "De color dorado con reflejos pálidos y burbujas pequeñas que demuestran fineza y calidad. Sus burbujas nos traen aromas de pan tostado, nos recuerda a levadura y frutos secos. En boca presenta buena acidez, cremoso y sedoso al paladar.",
+            "tipo de productos": "Vino espumante",
+            "varietal": "Brut Nature",
+            "presentacion": "6x1x750",
+=======
             "imagen": "",//nombre de la imagen
             "nombre": "",//nombre del vino
             "precio":0,//precio real
@@ -188,6 +235,7 @@ var dataVitis={
             "tipo": "Espumante",//vino espumante, blanco o tinto
             "varietal": "",//tipo de uva
             "presentacion": "",//medida o cantidad de la botella
+>>>>>>> 0288cd043260ce7cebeb6e2aa26d8c3fb6f726cd
             "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
             "tiempo": "",  //cuanto tiempo pasa en barrica 
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
