@@ -98,51 +98,51 @@ var dataVitis={
         },
         {//Vasty
             "id": 7,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":0,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo": "Espumante",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+            "imagen": "rose.png",
+            "nombre": "Dolores Espumante Rosado",
+            "precio":  3250,
+            "bodega": "Navarro Correas",
+            "region": "Mendoza",
+            "viñedo": "Valle de Uco Tupungato",
+            "notas": "De color  rosa pálido. Aromas frutados con reminiscencia a cereza, frambuesa y durazno. En boca de sabor Fresco, acidez equilibrada.",
+            "tipo": "Espumante",
+            "varietal": " Rosado",
+            "presentacion":"750Ml",
+            "crianza": "Roble Frances",
+            "tiempo": "12 meses",  
+            "info": "Dedicados a la vitivinicultura desde 1798. Vivimos el vino desda el terror, y es en Finca Agrelo, al pie de la Cordillera de los Andes donde cada uno de nuestros vinos se concibe con la filosofía y el espíritu único que nos legó Don Juan de Dios Correas; quien en su afán incansable por superarse supo hacer perdurar su legado a través de las generaciones:"
         },
         {
             "id": 8,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":0,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo": "Espumante",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+            "imagen": "dada_sparkling.png",
+            "nombre": "Espumante Dadá 7 Sweet Dulce",
+            "precio":2300,
+            "bodega": "Finca las moras",
+            "region": "Mendoza",
+            "viñedo": "Valle de Pedernal",
+            "notas": "Delicado espumante dulce natural elaborado con método Charmat. De color amarillo verdoso con aromas florales y sabor muy frutado.",
+            "tipo": "Espumante",
+            "varietal": "Dulce",
+            "presentacion": "750 ML",
+            "crianza":"",
+            "tiempo": "12 meses",  
+            "info": "Dada N°7 Vino Espumante Torrontes Sweet, es un delicado espumante dulce natural elaborado con método Charmat.  Ideal para acompañar salmón con salsas cítricas o tartas de frutas.  Servir Entre 7 y 9°C.",
         },
         {
             "id": 9,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":0,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo": "Espumante",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
+            "imagen": "dada_maracuya.jpeg",
+            "nombre": "Espumante Dadá Maracuya Dulce",
+            "precio":2300,
+            "bodega": "Finca de las Moras",
+            "region": "Mendoza",
+            "viñedo": "San Juan",
+            "notas": "Espumante frutado dulce natural, método Charmat. Su sabor frutado y floral, se combina con las notas de fruta tropical del Maracuyá logrando una perfecta armonía entre dulzor y frescura.",
+            "tipo": "Espumante",
+            "varietal": "Dulce",
+            "presentacion": "750 Ml",
+            "crianza": "",
+            "tiempo": "12 meses",
+            "info": "DADÁ es la marca más vanguardista de la Bodega, que ha logrado generar en Argentina la creación de una nueva categoría: sweet red. Vinos sensoriales y muy agradables que con gran éxito han marcado una ruptura en las convenciones típicas del vino.  Ideal para acompañar quesos estacionados como parmesano, gouda o sardo o foie gras o patés de sabores intensos. Servir entre 7 y 9°C.",
         },
         {//Samantha
             "id": 10,
