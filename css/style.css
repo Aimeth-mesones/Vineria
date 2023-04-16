@@ -277,3 +277,55 @@ column-gap: 40px;
     text-align: left !important;
 }
 
+/*TRABAJANDO EN EL FOOTER*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    margin-top: 40px;
+    background:black;
+    color: #fff;
+}
+
+.footer-contain{
+    display: flex;
+    gap: 80px;
+    padding: 40px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mail-footer{
+    display: flex;
+    gap: 5px;
+}
+
+.footer-content2{
+    display: flex;
+    gap: 50px;
+}
+
+.footer-content2-link{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.copyright{
+    width: 100%;
+    display: flex;
+    font-size: 1.1rem;
+    background:#B1A303 ;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-style: italic;
+}
+
+
