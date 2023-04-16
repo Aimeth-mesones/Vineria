@@ -49,7 +49,7 @@ var dataVitis={
             "info": "FINCAS NOTABLES es una línea de “Single Vineyards” que proviene de cuarteles especiales en nuestras fincas propias. Estos vinos exclusivos transmiten la perfecta fusión entre el cuidado de los viñedos, la sabiduría de la naturaleza y la sapiencia del trabajo.",
         },
         {//Yormaris
-            "id": 5,
+            "id": 4,
             "imagen": "trapiche-reserva-chardonnay.jpg",
             "nombre": "Trapiche Reserva",
             "precio": 2307,
@@ -65,7 +65,7 @@ var dataVitis={
             "info": "Trapiche Reserva es la línea emblemática de la bodega que nace al pie de la Cordillera de Los Andes para transformarse en la mejor expresión de todo lo bueno que Trapiche tiene para dar. Un vino que se caracteriza por su delicadeza, armonía y complejidad, otorgadas por su crianza en roble francés y americano a lo largo de 6 meses. Ideal para acompañar una bondiola de cerdo asada con manzanas verdes y crema de limon. Marida a la perfección con fondue de queso, e incluso ensaladas de verano; se recomienda beberlo entre 4 y 6°C",
         },
         {
-            "id": 6,
+            "id": 5,
             "imagen": "EL-ESTECO-Blanc-de-Blancs.png",
             "nombre": "El Esteco Blanc de Blancs",
             "precio": 14631,
@@ -81,7 +81,7 @@ var dataVitis={
             "info": "Proviene de las fincas de la Bodega Esteco más selectas otorgando características de un terroir único. No solo se trata de un gran vino, se trata sobre la historia de la historia de Esteco en Cafayate. Sobre sus viñedos que rodean a la bodega y del cuidado de una tierra única. Marida muy bien con Mero a la plancha, papines confitados con eneldo y oregano, se recomienda beberlo entre 11º a 13ºC.",
         },
         {
-            "id": 7,
+            "id": 6,
             "imagen": "coleccionprivadasauvinionblanc.png",
             "nombre": "Coleccion Privada",
             "precio": 605,
@@ -97,42 +97,7 @@ var dataVitis={
             "info": "Colección Privada es la línea que nos recuerda que el arte de hacer nos permite explorar y encontrar siempre nuevas y mejores expresiones. us etiquetas exhiben obras de prestigiosos y emergentes artistas argentinos, creando así una amplia colección de obras de arte y vinos. Vinos de estilo frutado, textura aterciopelada y larga presencia en boca distinguen a esta línea de varietales. Ideal para acompañar pescados y mariscos. Platos con alta acidez, ceviche, encurtidos y vinagretas. Servir a 12°C.",
         },
         {//Vasty
-<<<<<<< HEAD
-=======
             "id": 7,
-            "imagen": "rose.png",
-            "nombre": "Dolores Espumante Rosado",
-            "precio":  3250,
-            "bodega": "Navarro Correas",
-            "region": "Mendoza",
-            "viñedo": "Valle de Uco Tupungato",
-            "notas": "De color  rosa pálido. Aromas frutados con reminiscencia a cereza, frambuesa y durazno. En boca de sabor Fresco, acidez equilibrada.",
-            "tipo": "Espumante",
-            "varietal": " Rosado",
-            "presentacion":"750Ml",
-            "crianza": "Roble Frances",
-            "tiempo": "12 meses",  
-            "info": "Dedicados a la vitivinicultura desde 1798. Vivimos el vino desda el terror, y es en Finca Agrelo, al pie de la Cordillera de los Andes donde cada uno de nuestros vinos se concibe con la filosofía y el espíritu único que nos legó Don Juan de Dios Correas; quien en su afán incansable por superarse supo hacer perdurar su legado a través de las generaciones:"
-        },
-        {
-            "id": 8,
-            "imagen": "dada_sparkling.png",
-            "nombre": "Espumante Dadá 7 Sweet Dulce",
-            "precio":2300,
-            "bodega": "Finca las moras",
-            "region": "Mendoza",
-            "viñedo": "Valle de Pedernal",
-            "notas": "Delicado espumante dulce natural elaborado con método Charmat. De color amarillo verdoso con aromas florales y sabor muy frutado.",
-            "tipo": "Espumante",
-            "varietal": "Dulce",
-            "presentacion": "750 ML",
-            "crianza":"",
-            "tiempo": "12 meses",  
-            "info": "Dada N°7 Vino Espumante Torrontes Sweet, es un delicado espumante dulce natural elaborado con método Charmat.  Ideal para acompañar salmón con salsas cítricas o tartas de frutas.  Servir Entre 7 y 9°C.",
-        },
-        {
->>>>>>> 0288cd043260ce7cebeb6e2aa26d8c3fb6f726cd
-            "id": 9,
             "imagen": "dada_maracuya.jpeg",
             "nombre": "Espumante Dadá Maracuya Dulce",
             "precio":2300,
@@ -148,7 +113,7 @@ var dataVitis={
             "info": "DADÁ es la marca más vanguardista de la Bodega, que ha logrado generar en Argentina la creación de una nueva categoría: sweet red. Vinos sensoriales y muy agradables que con gran éxito han marcado una ruptura en las convenciones típicas del vino.  Ideal para acompañar quesos estacionados como parmesano, gouda o sardo o foie gras o patés de sabores intensos. Servir entre 7 y 9°C.",
         },
         {
-            "id": 10,
+            "id": 8,
             "imagen": "",//nombre de la imagen
             "nombre": "",//nombre del vino
             "precio":0,//precio real
@@ -164,23 +129,7 @@ var dataVitis={
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
         {
-            "id": 11,
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":0,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo": "Tinto",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
-            "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
-            "tiempo": "",  //cuanto tiempo pasa en barrica 
-            "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
-        },
-        {//Samantha
-            "id": 4,
+            "id": 9,
             "imagen": "Vino-iscay.jpg",
             "nombre": "Iscay",
             "precio":39011.94,
@@ -196,7 +145,7 @@ var dataVitis={
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
         {
-            "id": 8,
+            "id": 10,
             "imagen": "Vino-gran-medalla.jpg",
             "nombre": "Gran Medalla",
             "precio":11.192,
@@ -212,8 +161,7 @@ var dataVitis={
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
         {
-            "id": 12,
-<<<<<<< HEAD
+            "id": 11,
             "imagen": "vino-el-esteco-espumante.jpg",
             "nombre": "El Esteco Champenoise",
             "precio":9.269,
@@ -224,18 +172,6 @@ var dataVitis={
             "tipo de productos": "Vino espumante",
             "varietal": "Brut Nature",
             "presentacion": "6x1x750",
-=======
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":0,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo": "Espumante",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
->>>>>>> 0288cd043260ce7cebeb6e2aa26d8c3fb6f726cd
             "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
             "tiempo": "",  //cuanto tiempo pasa en barrica 
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
