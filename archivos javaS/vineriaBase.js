@@ -121,7 +121,7 @@ var dataVitis={
             "region": "Mendoza",
             "viñedo": "Valle de Uco Tupungato",
             "notas": "De color  rosa pálido. Aromas frutados con reminiscencia a cereza, frambuesa y durazno. En boca de sabor Fresco, acidez equilibrada.",
-            "tipo": "Espumante",
+            "tipo": "espumante",
             "varietal": " Rosado",
             "presentacion":"750Ml",
             "crianza": "Roble Frances",
@@ -136,7 +136,7 @@ var dataVitis={
         "region": "Mendoza",
         "viñedo": "Valle de Pedernal",
         "notas": "Delicado espumante dulce natural elaborado con método Charmat. De color amarillo verdoso con aromas florales y sabor muy frutado.",
-        "tipo": "Espumante",
+        "tipo": "espumante",
         "varietal": "Dulce",
         "presentacion": "750 ML",
         "crianza":"",
@@ -144,7 +144,7 @@ var dataVitis={
         "info": "Dada N°7 Vino Espumante Torrontes Sweet, es un delicado espumante dulce natural elaborado con método Charmat.  Ideal para acompañar salmón con salsas cítricas o tartas de frutas.  Servir Entre 7 y 9°C.",
         },
         {
-            "id": 9,
+            "id": 10,
             "imagen": "Vino-iscay.jpg",
             "nombre": "Iscay",
             "precio":39011.94,
@@ -160,7 +160,7 @@ var dataVitis={
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
         {
-            "id": 10,
+            "id": 11,
             "imagen": "Vino-gran-medalla.jpg",
             "nombre": "Gran Medalla",
             "precio":11.192,
@@ -176,7 +176,7 @@ var dataVitis={
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
         },
         {
-            "id": 11,
+            "id": 12,
             "imagen": "vino-el-esteco-espumante.jpg",
             "nombre": "El Esteco Champenoise",
             "precio":9.269,
