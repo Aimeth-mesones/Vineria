@@ -97,41 +97,6 @@ var dataVitis={
             "info": "Colección Privada es la línea que nos recuerda que el arte de hacer nos permite explorar y encontrar siempre nuevas y mejores expresiones. us etiquetas exhiben obras de prestigiosos y emergentes artistas argentinos, creando así una amplia colección de obras de arte y vinos. Vinos de estilo frutado, textura aterciopelada y larga presencia en boca distinguen a esta línea de varietales. Ideal para acompañar pescados y mariscos. Platos con alta acidez, ceviche, encurtidos y vinagretas. Servir a 12°C.",
         },
         {//Vasty
-<<<<<<< HEAD
-=======
-            "id": 7,
-            "imagen": "rose.png",
-            "nombre": "Dolores Espumante Rosado",
-            "precio":  3250,
-            "bodega": "Navarro Correas",
-            "region": "Mendoza",
-            "viñedo": "Valle de Uco Tupungato",
-            "notas": "De color  rosa pálido. Aromas frutados con reminiscencia a cereza, frambuesa y durazno. En boca de sabor Fresco, acidez equilibrada.",
-            "tipo": "Espumante",
-            "varietal": " Rosado",
-            "presentacion":"750Ml",
-            "crianza": "Roble Frances",
-            "tiempo": "12 meses",  
-            "info": "Dedicados a la vitivinicultura desde 1798. Vivimos el vino desda el terror, y es en Finca Agrelo, al pie de la Cordillera de los Andes donde cada uno de nuestros vinos se concibe con la filosofía y el espíritu único que nos legó Don Juan de Dios Correas; quien en su afán incansable por superarse supo hacer perdurar su legado a través de las generaciones:"
-        },
-        {
-            "id": 8,
-            "imagen": "dada_sparkling.png",
-            "nombre": "Espumante Dadá 7 Sweet Dulce",
-            "precio":2300,
-            "bodega": "Finca las moras",
-            "region": "Mendoza",
-            "viñedo": "Valle de Pedernal",
-            "notas": "Delicado espumante dulce natural elaborado con método Charmat. De color amarillo verdoso con aromas florales y sabor muy frutado.",
-            "tipo": "Espumante",
-            "varietal": "Dulce",
-            "presentacion": "750 ML",
-            "crianza":"",
-            "tiempo": "12 meses",  
-            "info": "Dada N°7 Vino Espumante Torrontes Sweet, es un delicado espumante dulce natural elaborado con método Charmat.  Ideal para acompañar salmón con salsas cítricas o tartas de frutas.  Servir Entre 7 y 9°C.",
-        },
-        {
->>>>>>> 0288cd043260ce7cebeb6e2aa26d8c3fb6f726cd
             "id": 9,
             "imagen": "dada_maracuya.jpeg",
             "nombre": "Espumante Dadá Maracuya Dulce",
@@ -213,7 +178,6 @@ var dataVitis={
         },
         {
             "id": 12,
-<<<<<<< HEAD
             "imagen": "vino-el-esteco-espumante.jpg",
             "nombre": "El Esteco Champenoise",
             "precio":9.269,
@@ -224,18 +188,6 @@ var dataVitis={
             "tipo de productos": "Vino espumante",
             "varietal": "Brut Nature",
             "presentacion": "6x1x750",
-=======
-            "imagen": "",//nombre de la imagen
-            "nombre": "",//nombre del vino
-            "precio":0,//precio real
-            "bodega": "",//nombre de la bodega que lo elabora
-            "region": "",// de donde es el vino (provincia)
-            "viñedo": "",//donde esta ubicado el viñedo o bodega(parte de la provincia)
-            "notas": "",// descripcion corta para la pag de home datos de color, sabor y textura
-            "tipo": "Espumante",//vino espumante, blanco o tinto
-            "varietal": "",//tipo de uva
-            "presentacion": "",//medida o cantidad de la botella
->>>>>>> 0288cd043260ce7cebeb6e2aa26d8c3fb6f726cd
             "crianza": "",// tipo de material donde se almacena (tipo de madera de la barrica)
             "tiempo": "",  //cuanto tiempo pasa en barrica 
             "info": "",//informacion ampliada del vino,datos de la bodega,maridaje
