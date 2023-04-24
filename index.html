@@ -12,68 +12,63 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <title>Mi Vineriass</title>
+  <title>Vitis Dorada</title>
 </head>
 
 <body>
   <header>
     <section class="encabezado"><!-- NAVEGACION -->
       <div class="logo">
-        <img src="./multimedia/Logo_vinoteca_Mesa_de_trabajo_1-01.png" alt="Logo vineria">
+        <img src="./multimedia/Logotipo_vitis.png" alt="Logo vitis Dorada">
       </div>
-
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Busca tu bodega favorita" aria-label="Search" id="busqueda">
+        <input class="form-control me-2" type="search" placeholder="Busca tu bodega favorita" aria-label="Search"
+          id="busqueda">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </section>
 
+
     <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#" id="home">Home</a>
+              <a class="nav-link link" aria-current="page" href="#" id="home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="bodegas">Bodegas</a>
+              <a class="nav-link link" href="#" id="bodegas">Bodegas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="promociones">Promociones</a>
+              <a class="nav-link link" href="#" id="promociones">Promociones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="regalos">Regalos</a>
+              <a class="nav-link link" href="#" id="regalos">Regalos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="tintos">Vinos Tintos</a>
+              <a class="nav-link link" href="#" id="vinos">Todos los Vinos</a>
             </li>
 
+            <li class="nav-item"><a class="nav-link link" href="#" id="tintos">Vinos Tintos</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#" id="blancos">Vinos Blancos</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#" id="espumantes">Vinos Espumantes</a></li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="blancos">Vinos Blancos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="espumantes">Vinos Espumantes</a>
-            </li>
 
 
           </ul>
         </div>
+
       </div>
+
     </nav> <!--FIN DE LA BARRA DE NAVEGACION -->
 
     </section>
   </header>
   <main>
-    <!-- INICIO CAROUSEL -->
+    <!-- INICIO CAROUSEL PRINCIPAL-->
 
     <div id="carouselAuto" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -121,7 +116,8 @@
 
         </div>
         <div class="carousel-item" style="background-image: url(./multimedia/carouselimagetres.png);">
-
+          <div class="fondo"></div>
+          <div class="contenidoCarouselDos"></div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselAuto" data-bs-slide="prev">
@@ -133,10 +129,121 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!--FIN DEL CAROUSEL PRINCIPAL-->
+    <!-- HOME: INICIO SECCION DESTACADOS -->
+    <section id="destacadosVinos">
+      <p class="tituloSeccionDestacado">Vinos Destacados</p>
+      <hr class="misc gray-misc">
+      <div class="contenidoSeccion">
+        <div class="cuadroImageSeccion">
+          <div class="contImgSeccion"></div>
+        </div>
+        <div class="infoSeccion" style="background-color: white">
+          <div id="carouselExampleAutoplaying" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner innerDestacado">
+              <div class="carousel-item  item-destacado active">
+                <div class="cards-wrapper">
+                  <div class="card cardDestacado">
+                    <div class="image-wrapper"><img src="./multimedia/vino malbec.jpg" alt="..."></div>
+
+                    <div class="card-body">
+                      <p class="card-title title-destacado">Gran Medalla Malbec</p>
+                      <p class="card-text text-destacado">Vino Tinto</p>
+                      <p class="card-text text-destacado">Bodega Trapiche</p>
+                      <p class="card-text ">Precio: $ 11192</p>
+                      <a href="#" class="btn btn-destacado">Ver más</a>
+                    </div>
+                  </div>
+                  <!-- carta2 -->
+                  <div class="card cardDestacado">
+                    <div class="image-wrapper"><img src="./multimedia/dada_sparkling.png" alt="..."></div>
+                    <div class="card-body">
+                      <p class="card-title title-destacado">Dadá 7 Sweet Dulce</p>
+                      <p class="card-text text-destacado">Vino Espumante</p>
+                      <p class="card-text text-destacado">Finca las moras</p>
+                      <p class="card-text ">Precio: $ 2300</p>
+                      <a href="#" class="btn btn-destacado">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item  item-destacado active">
+                <div class="cards-wrapper">
+                  <!-- carta3 -->
+                  <div class="card cardDestacado">
+                    <div class="image-wrapper"><img src="./multimedia/coleccionprivadasauvinionblanc.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title title-destacado">Coleccion Privada</p>
+                      <p class="card-text text-destacado">Vino Blanco</p>
+                      <p class="card-text text-destacado">Bodega Navarro Correas</p>
+                      <p class="card-text ">Precio: $ 605</p>
+                      <a href="#" class="btn btn-destacado">Ver más</a>
+                    </div>
+                  </div>
+                  <div class="card cardDestacado">
+                    <div class="image-wrapper"><img src="./multimedia/dada_maracuya.jpeg" alt="..."></div>
+
+                    <div class="card-body">
+                      <p class="card-title title-destacado">Dadá Maracuya Dulce</p>
+                      <p class="card-text text-destacado">Vino Espumante</p>
+                      <p class="card-text text-destacado">Finca de las Moras</p>
+                      <p class="card-text ">Precio: $ 2300</p>
+                      <a href="#" class="btn btn-destacado">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item item-destacado">
+                <div class="cards-wrapper">
+
+                  <!-- carta2 -->
+                  <div class="card cardDestacado">
+                    <div class="image-wrapper"><img src="./multimedia/EL-ESTECO-Blanc-de-Blancs.png" alt="..."></div>
+                    <div class="card-body">
+                      <p class="card-title title-destacado">El Esteco Blanc de Blancs</p>
+                      <p class="card-text text-destacado">Vino Blanco</p>
+                      <p class="card-text text-destacado">Bodega El Esteco</p>
+                      <p class="card-text ">Precio: $ 14631</p>
+                      <a href="#" class="btn btn-destacado">Ver más</a>
+                    </div>
+                  </div>
+                  <!-- carta3 -->
+                  <div class="card cardDestacado">
+                    <div class="image-wrapper"><img src="./multimedia/trapiche-reserva-chardonnay.jpg" alt="..."></div>
+                    <div class="card-body">
+                      <p class="card-title title-destacado">Gran Medalla</p>
+                      <p class="card-text text-destacado">Vino Blanco</p>
+                      <p class="card-text text-destacado">Bodega Trapiche</p>
+                      <p class="card-text ">Precio: $ 11192</p>
+                      <a href="#" class="btn btn-destacado">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
 
+        </div>
+      </div>
 
-    <!--FIN DEL CAROUSEL-->
+
+    </section>
+    <!-- HOME: FIN SECCION DESTACADOS -->
+
 
 
 
@@ -145,83 +252,11 @@
 
 
     <!-- INICIO DE LAS CARTAS -->
-    <section class="tarjetas" >
+    <section class="tarjetas">
       <div class="row row-cols-3 g-4" id="tarjetas"></div>
 
     </section>
 
-    <!-- Detalle de Vinos -->
-    <section class="detalles" id="detalles">
-      <div class="card" style="width: 18rem;">
-        <img src="./multimedia/trapiche-reserva-chardonnay.jpg" class="card-img-top"
-          alt="Vino Trapiche reserva chardonnay">
-        <div class="card-body">
-          <p class="card-text">Vino Trapiche Reserva Chardonnay</p>
-        </div>
-      </div>
-      <!-- FICHA TECNICA -->
-      <div class="card text-center personalizada">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="true" href="#">FICHA TÉCNICA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ACERCA DE LA LINEA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">OPINIONES</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <table class="table table-dark table-hover">
-            <tbody>
-              <tr>
-                <th scope="row">Bodega:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Región:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Viñedo:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Crianza:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Notas de Cata:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Tipo de productos:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Varietal:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Presentación:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Tiempo de Crianza:</th>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-          </table>
-        </div>
-      </div>
-
-
-
-    </section>
 
 
 
@@ -335,8 +370,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <script src="./archivos javaS/vineriaBase.js"></script>
-  <script src="./archivos javaS/index.js"></script>
+  <script src="./archivosJavaS/vineriaBase.js"></script>
+  <script src="./archivosJavaS/index.js"></script>
 </body>
 
 </html>
