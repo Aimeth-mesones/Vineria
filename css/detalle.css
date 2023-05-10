@@ -1,0 +1,21 @@
+/* ESTILOS DE LA SECCION DETALLES DE LOS VINOS */
+.detalles{
+    display: flex;
+    width: 80%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+
+    }
+    
+    .personalizada{
+        width: 50%;
+        height: auto;
+    }
+    /* alineacion de la tabla de ficha tecnica */
+    .text-center{
+        text-align: left !important;
+    }
+    
