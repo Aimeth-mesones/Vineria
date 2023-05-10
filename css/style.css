@@ -15,6 +15,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* position: fixed;
+    left: 0;
+    top:0; */
 }
 
 .encabezado{
@@ -55,11 +58,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* margin-top: 180px; */
 }
 /* ESTILOS DEL CAROUSEL */
 .carousel{
     width: 100%;
     height: auto;
+    display:none;
 }
 .contenidoCarousel{
     width: 90%;
@@ -266,6 +271,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 column-gap: 40px;
+display:none;
 }
 
 .personalizada{
