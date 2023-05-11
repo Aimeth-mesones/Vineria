@@ -97,8 +97,13 @@ var dataVitis={
             "info": "Colección Privada es la línea que nos recuerda que el arte de hacer nos permite explorar y encontrar siempre nuevas y mejores expresiones. us etiquetas exhiben obras de prestigiosos y emergentes artistas argentinos, creando así una amplia colección de obras de arte y vinos. Vinos de estilo frutado, textura aterciopelada y larga presencia en boca distinguen a esta línea de varietales. Ideal para acompañar pescados y mariscos. Platos con alta acidez, ceviche, encurtidos y vinagretas. Servir a 12°C.",
         },
         {//Vasty
+<<<<<<< HEAD:public/archivosJavaS/vineriaBase.js
             "id": 7,
             "imagen": "dada maracuya.jpeg",
+=======
+            "id": 9,
+            "imagen": "dada_maracuya.jpeg",
+>>>>>>> 8d2d80f0cea5ed1f6e3a6a4ab4337c7feb023035:archivosJavaS/vineriaBase.js
             "nombre": "Dadá Maracuya Dulce",
             "precio":2300,
             "bodega": "Finca de las Moras",
