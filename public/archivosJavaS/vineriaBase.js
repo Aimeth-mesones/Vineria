@@ -2,7 +2,7 @@ var dataVitis={
     "vinos" :[
         {
             "id": 1,
-            "imagen": "Vino\ Tinto\ Rutini3.jpg",
+            "imagen": "TintoRutini.jpg",
             "nombre": "Rutini",
             "precio":4700,
             "bodega": "La Rural",
@@ -18,7 +18,7 @@ var dataVitis={
         },
         {
             "id": 2,
-            "imagen": "vino\ malbec.jpg",
+            "imagen": "vinomalbec.jpg",
             "nombre": "Gran Medalla Malbec",
             "precio":11192,
             "bodega": "Trapiche",
@@ -34,7 +34,7 @@ var dataVitis={
         },
         {
             "id": 3,
-            "imagen": "vino\ el\ esteco.jpg",
+            "imagen": "vino el esteco.jpg",
             "nombre": "Fincas Notables",
             "precio": 7889,
             "bodega": "El Esteco",
@@ -50,7 +50,7 @@ var dataVitis={
         },
         {//Yormaris
             "id": 4,
-            "imagen": "trapiche-reserva-chardonnay.jpg",
+            "imagen": "trapiche reserva chardonnay.jpg",
             "nombre": "Trapiche Reserva",
             "precio": 2307,
             "bodega": "Trapiche",
@@ -66,7 +66,7 @@ var dataVitis={
         },
         {
             "id": 5,
-            "imagen": "EL-ESTECO-Blanc-de-Blancs.png",
+            "imagen": "blanc de blancs.png",
             "nombre": "El Esteco Blanc de Blancs",
             "precio": 14631,
             "bodega": "El Esteco",
@@ -82,7 +82,7 @@ var dataVitis={
         },
         {
             "id": 6,
-            "imagen": "coleccionprivadasauvinionblanc.png",
+            "imagen": "coleccionprivada.png",
             "nombre": "Coleccion Privada",
             "precio": 605,
             "bodega": "Navarro Correas",
@@ -98,7 +98,7 @@ var dataVitis={
         },
         {//Vasty
             "id": 7,
-            "imagen": "dada_maracuya.jpeg",
+            "imagen": "dada maracuya.jpeg",
             "nombre": "Dadá Maracuya Dulce",
             "precio":2300,
             "bodega": "Finca de las Moras",
@@ -126,10 +126,10 @@ var dataVitis={
             "presentacion":"750Ml",
             "crianza": "Roble Frances",
             "tiempo": "12 meses",  
-            "info": "Dedicados a la vitivinicultura desde 1798. Vivimos el vino desda el terror, y es en Finca Agrelo, al pie de la Cordillera de los Andes donde cada uno de nuestros vinos se concibe con la filosofía y el espíritu único que nos legó Don Juan de Dios Correas; quien en su afán incansable por superarse supo hacer perdurar su legado a través de las generaciones:"
+            "info": "Dedicados a la vitivinicultura desde 1798. Vivimos el vino desda el terror, y es en Finca Agrelo, al pie de la Cordillera de los Andes donde cada uno de nuestros vinos se concibe con la filosofía y el espíritu único que nos legó Don Juan de Dios Correas; quien en su afán incansable por superarse supo hacer perdurar su legado a través de las generaciones"
         },
         {"id":9,
-        "imagen": "dada_sparkling.png",
+        "imagen": "dada sparkling.png",
         "nombre": "Dadá 7 Sweet Dulce",
         "precio":2300,
         "bodega": "Finca las moras",
@@ -145,7 +145,7 @@ var dataVitis={
         },
         {
             "id": 10,
-            "imagen": "Vino-iscay.jpg",
+            "imagen": "Vino Iscay.jpg",
             "nombre": "Iscay",
             "precio":39011.94,
             "bodega": "Trapiche",
@@ -161,7 +161,7 @@ var dataVitis={
         },
         {
             "id": 11,
-            "imagen": "Vino-gran-medalla.jpg",
+            "imagen": "Vino gran medalla.jpg",
             "nombre": "Gran Medalla",
             "precio":11.192,
             "bodega": "Trapiche",
@@ -177,7 +177,7 @@ var dataVitis={
         },
         {
             "id": 12,
-            "imagen": "vino-el-esteco-espumante.jpg",
+            "imagen": "el esteco espumante.jpg",
             "nombre": "El Esteco Champenoise",
             "precio":9.269,
             "bodega": "El Esteco",

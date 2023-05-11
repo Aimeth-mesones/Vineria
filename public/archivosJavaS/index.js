@@ -1,21 +1,47 @@
-var vinos = dataVitis.vinos
-console.log(vinos)
+const coleccionVinos = firebase.firestore().collection("vinos"); 
 
-var vinosTintos = []
-var vinosEspumantes = []
-var vinosBlancos = []
-let arrayBusqueda = []
-for (var i = 0; i < vinos.length; i++) {
-  if (vinos[i].tipo === "tinto") {
-    vinosTintos.push(vinos[i])
-  }
-  else if (vinos[i].tipo === "espumante") {
-    vinosEspumantes.push(vinos[i])
-  }
-  else {
-    vinosBlancos.push(vinos[i])
-  }
-}
+  // llama a la coleccion que creamos en firebase database
+  
+  let dataVinos=[]
+  let vinos=[]
+  let vinosTintos = []
+  let vinosEspumantes = []
+  let vinosBlancos = []
+  let arrayBusqueda = []
+
+ async function getDB(){
+await coleccionVinos.get()
+  .then((results) => {
+    console.log(results)
+    const data = results.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    dataVinos.push(...data)
+
+    vinos=dataVinos
+    // console.log("Toda data en la colección 'vinos' ", data); 
+
+    for (var i = 0; i < vinos.length; i++) {
+      if (vinos[i].tipo === "tinto") {
+        vinosTintos.push(vinos[i])
+      }
+      else if (vinos[i].tipo === "espumante") {
+        vinosEspumantes.push(vinos[i])
+      }
+      else {
+        vinosBlancos.push(vinos[i])
+      }}
+  })};getDB()
+  // console.log(dataVinos)
+
+  console.log(vinos)
+ 
+
+
+
+
+
 console.log("estos son los vinos blancos")
 console.log(vinosBlancos)
 console.log("estos son los vinos espumantes")
@@ -40,14 +66,12 @@ function navegacion(id) {
     case "bodegas":
       console.log("estoy en bodegas")
       break;
-    case "promociones":
-      console.log("estoy en promociones")
-      break;
-    case "regalos":
+     case "regalos":
       console.log("estoy en regalos")
       break;
     case "vinos":
       console.log("todos los vinos"),
+      console.log(vinos)
       document.getElementById("carouselAuto").style.display="none",
       document.getElementById("tarjetas").style.display="flex",
       document.getElementById("destacadosVinos").style.display="none",
@@ -78,30 +102,20 @@ function navegacion(id) {
       arrayBusqueda = vinosEspumantes,
       console.log("vinos espumantes")
       break;
+
     default: 
-    // display(vinos)
+    
     document.getElementById("tarjetas").style.display="none",
       document.getElementById("carouselAuto").style.display="flex",
       document.getElementById("destacadosVinos").style.display="flex",
+      document.getElementById("detalles").style.display="none",
       console.log("estoy en home")
       
   }
 }
 
 function display(array) {
-  // var url;
-  // var imageUrl;
-  // if (location.pathname == "/pages/detalleVino.html") {
-  //     url = "./detalleVino.html"
-  //     imageUrl = "../multimedia/"
-  // }
-  // else {
-  //     url = "./pages/detalleVino.html"
-  //     imageUrl = "./multimedia/"
-
-  // }
-
-
+ 
   var html = "";
   for (var i = 0; i < array.length; i++) {
     html += `
@@ -109,7 +123,7 @@ function display(array) {
           <div class="card mb-3 h-100" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4"
-                style="background-image:${array[i].imagen});background-repeat: no-repeat; background-size: cover;"
+                style="background-image:${array[i].image});background-repeat: no-repeat; background-size: cover;"
                 class="img-fluid">
               </div>
               <div class="col-md-8">
@@ -117,33 +131,35 @@ function display(array) {
                   <h5 class="card-title">${array[i].nombre}</h5>
                   <p class="text-muted">${array[i].bodega}</p>
                   <p class="card-text">${array[i].notas}</p>
-                  <a href="./pages/detalleVino.html" class="card-link">Ver Detalle</a>
+                  <a href="#" class="card-link">Ver Detalle</a>
                   <p class="card-text">Precio: $ ${array[i].precio}</p>
                 </div>
               </div>
             </div>
             <div class="row ">
               <div class="col-md-12">
-                <div class="card-footer">
-                  <form>
-                    <div class="row">
-                      <label for="cantidad" class="col-sm-4 col-form-label">Cantidad</label>
-                      <div class=" col-sm-3">
-                        <input type="number" class="form-control" id="cantidad" placeholder="1">
-                      </div>
-                      <div class="col-sm-5">
-                        <button type="submit" class="btn btn-primary">Comprar</button>
-                      </div>
-                    </div>
-                  </form>
+                <div class="card-footer">               
+                        <button id=${array[i].id} class="btn btn-primary botonesDetalles ">Ver mas</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         `
+      
   }
+
   document.getElementById("tarjetas").innerHTML = html;
+  var botones=document.querySelectorAll(".botonesDetalles")
+  for(var i=0; i<botones.length;i++){
+    botones[i].addEventListener("click", function(e){
+    
+      console.log("hice click")
+      displayDetalle(e.target.id)
+      
+    })
+  }
+ 
 }
 navegacion(home)
 
