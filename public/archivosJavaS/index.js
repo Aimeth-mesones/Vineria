@@ -1,46 +1,58 @@
-const coleccionVinos = firebase.firestore().collection("vinos"); 
+const coleccionVinos = firebase.firestore().collection("vinos");
 
-  // llama a la coleccion que creamos en firebase database
-  
-  let dataVinos=[]
-  let vinos=[]
-  let vinosTintos = []
-  let vinosEspumantes = []
-  let vinosBlancos = []
-  let arrayBusqueda = []
+// llama a la coleccion que creamos en firebase database
 
- async function getDB(){
-await coleccionVinos.get()
-  .then((results) => {
-    console.log(results)
-    const data = results.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-    dataVinos.push(...data)
+let dataVinos = []
+let vinos = []
+let vinosTintos = []
+let vinosEspumantes = []
+let vinosBlancos = []
+let arrayBusqueda = []
+let tintosDestacados = []
+let blancosDestacados = []
+let espumantesDestacados = []
+let vinosDestacados = []
 
-    vinos=dataVinos
-    // console.log("Toda data en la colección 'vinos' ", data); 
+async function getDB() {
+  await coleccionVinos.get()
+    .then((results) => {
+      console.log(results)
+      const data = results.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      dataVinos.push(...data)
 
-    for (var i = 0; i < vinos.length; i++) {
-      if (vinos[i].tipo === "tinto") {
-        vinosTintos.push(vinos[i])
+      vinos = dataVinos
+      // console.log("Toda data en la colección 'vinos' ", data); 
+
+      for (var i = 0; i < vinos.length; i++) {
+        if (vinos[i].tipo === "tinto") {
+          vinosTintos.push(vinos[i])
+        }
+        else if (vinos[i].tipo === "espumante") {
+          vinosEspumantes.push(vinos[i])
+        }
+        else {
+          vinosBlancos.push(vinos[i])
+
+        }
       }
-      else if (vinos[i].tipo === "espumante") {
-        vinosEspumantes.push(vinos[i])
-      }
-      else {
-        vinosBlancos.push(vinos[i])
-      }}
-  })};getDB()
-  // console.log(dataVinos)
 
-  console.log(vinos)
- 
+      // ordenVinos(vinos)
+      ordenBlancos()
+      ordenTintos()
+      ordenEspumantes()
+      tintosDisplay(tintosDestacados)
+      blancosDisplay(blancosDestacados)
+      espumantesDisplay(espumantesDestacados)
 
+    })
+}; getDB()
 
+console.log("vinos Destacados", vinosDestacados)
 
-
+console.log(vinos)
 
 console.log("estos son los vinos blancos")
 console.log(vinosBlancos)
@@ -66,100 +78,88 @@ function navegacion(id) {
     case "bodegas":
       console.log("estoy en bodegas")
       break;
-     case "regalos":
+    case "regalos":
       console.log("estoy en regalos")
       break;
     case "vinos":
       console.log("todos los vinos"),
-      console.log(vinos)
-      document.getElementById("carouselAuto").style.display="none",
-      document.getElementById("tarjetas").style.display="flex",
-      document.getElementById("destacadosVinos").style.display="none",
-      display(vinos),
-      arrayBusqueda = vinos
+        console.log(vinos)
+      document.getElementById("carouselAuto").style.display = "none",
+        document.getElementById("tarjetas").style.display = "flex",
+        document.getElementById("destacadosVinos").style.display = "none",
+        display(vinos),
+        arrayBusqueda = vinos
       break;
     case "tintos":
       display(vinosTintos),
-      document.getElementById("carouselAuto").style.display="none",
-      document.getElementById("tarjetas").style.display="flex",
-      document.getElementById("destacadosVinos").style.display="none",
-      arrayBusqueda = vinosTintos,
-      console.log("vinos tintos")
+        document.getElementById("carouselAuto").style.display = "none",
+        document.getElementById("tarjetas").style.display = "flex",
+        document.getElementById("destacadosVinos").style.display = "none",
+        arrayBusqueda = vinosTintos,
+        console.log("vinos tintos")
       break;
     case "blancos":
       display(vinosBlancos),
-      document.getElementById("carouselAuto").style.display="none",
-      document.getElementById("tarjetas").style.display="flex",
-      document.getElementById("destacadosVinos").style.display="none",
-      arrayBusqueda = vinosBlancos,
-      console.log("vinos blancos")
+        document.getElementById("carouselAuto").style.display = "none",
+        document.getElementById("tarjetas").style.display = "flex",
+        document.getElementById("destacadosVinos").style.display = "none",
+        arrayBusqueda = vinosBlancos,
+        console.log("vinos blancos")
       break;
     case "espumantes":
       display(vinosEspumantes),
-      document.getElementById("carouselAuto").style.display="none",
-      document.getElementById("tarjetas").style.display="flex",
-      document.getElementById("destacadosVinos").style.display="none",
-      arrayBusqueda = vinosEspumantes,
-      console.log("vinos espumantes")
+        document.getElementById("carouselAuto").style.display = "none",
+        document.getElementById("tarjetas").style.display = "flex",
+        document.getElementById("destacadosVinos").style.display = "none",
+        arrayBusqueda = vinosEspumantes,
+        console.log("vinos espumantes")
       break;
 
-    default: 
-    
-    document.getElementById("tarjetas").style.display="none",
-      document.getElementById("carouselAuto").style.display="flex",
-      document.getElementById("destacadosVinos").style.display="flex",
-      document.getElementById("detalles").style.display="none",
-      console.log("estoy en home")
-      
+    default:
+      document.getElementById("tarjetas").style.display = "none",
+        document.getElementById("carouselAuto").style.display = "flex",
+        document.getElementById("destacadosVinos").style.display = "flex",
+        document.getElementById("detalles").style.display = "none",
+        console.log("estoy en home")
+
   }
 }
 
 function display(array) {
- 
+
   var html = "";
   for (var i = 0; i < array.length; i++) {
     html += `
         <div class="col">
-          <div class="card mb-3 h-100" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4"
-                style="background-image:${array[i].image});background-repeat: no-repeat; background-size: cover;"
-                class="img-fluid">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">${array[i].nombre}</h5>
-                  <p class="text-muted">${array[i].bodega}</p>
-                  <p class="card-text">${array[i].notas}</p>
-                  <a href="#" class="card-link">Ver Detalle</a>
-                  <p class="card-text">Precio: $ ${array[i].precio}</p>
-                </div>
-              </div>
+          <div class="card">
+            <div class="imageContent">
+              <img src="${array[i].image}">
             </div>
-            <div class="row ">
-              <div class="col-md-12">
-                <div class="card-footer">               
-                        <button id=${array[i].id} class="btn btn-primary botonesDetalles ">Ver mas</button>
-                </div>
+              <div class="card-body">
+                <h5 class="card-title">${array[i].nombre}</h5>
+                <p class="text-muted">${array[i].bodega}</p>
+                <p class="card-text">${array[i].notas}</p>
               </div>
-            </div>
+              <div class="card-footer">               
+                <p class="card-text">Precio: $ ${array[i].precio}</p>
+                <button id=${array[i].id} class="btn btn-primary botonesDetalles ">Más Info</button>
+              </div>
           </div>
         </div>
         `
-      
   }
 
   document.getElementById("tarjetas").innerHTML = html;
-  var botones=document.querySelectorAll(".botonesDetalles")
-  for(var i=0; i<botones.length;i++){
-    botones[i].addEventListener("click", function(e){
-    
+  var botones = document.querySelectorAll(".botonesDetalles")
+  for (var i = 0; i < botones.length; i++) {
+    botones[i].addEventListener("click", function (e) {
+
       console.log("hice click")
       displayDetalle(e.target.id)
-      
+
     })
   }
- 
+
 }
 navegacion(home)
 
@@ -181,4 +181,104 @@ function busquedaSearch(vino) {
   else {
     document.getElementById("tarjetas").innerHTML = `<h1>No se encontraron resultados</h1>`
   }
+}
+
+
+// ORDENANDO LOS ARRAY DE CADA TIPO DE VINO POR PRECIO DE MENOR A MAYOR
+
+function ordenBlancos() {
+  // ordena de menor a mayor por precios
+  var blancosOrd = vinosBlancos.sort((a, b) => { return a.precio - b.precio })
+  for (var i = 0; i < 2; i++) {
+    blancosDestacados.push(blancosOrd[i])
+  }
+}
+function ordenTintos() {
+  // ordena de menor a mayor por precios
+  var tintosOrd = vinosTintos.sort((a, b) => { return a.precio - b.precio })
+  for (var i = 0; i < 2; i++) {
+    tintosDestacados.push(tintosOrd[i])
+  }
+}
+
+function ordenEspumantes() {
+  // ordena de menor a mayor por precios
+  var espumantesOrd = vinosEspumantes.sort((a, b) => { return a.precio - b.precio })
+  for (var i = 0; i < 2; i++) {
+    espumantesDestacados.push(espumantesOrd[i])
+  }
+}
+
+// CREANDO LAS CARTAS PARA EL CAROUSEL DE VINOS DESTACADOS
+function tintosDisplay(tintosDestacados) {
+
+  var htmlTintos = "";
+  for (var i = 0; i < tintosDestacados.length; i++) {
+    htmlTintos += `
+    <div class="card cardDestacado">
+              <div class="image-wrapper"><img
+                  src="${tintosDestacados[i].image}"
+                  alt="${tintosDestacados[i].nombre}"></div>
+
+              <div class="card-body">
+                <p class="card-title title-destacado">${tintosDestacados[i].nombre}</p>
+                <p class="card-text text-destacado">Vino:${tintosDestacados[i].tipo}</p>
+                <p class="card-text text-destacado">Bodega: ${tintosDestacados[i].bodega}</p>
+                <p class="card-text ">Precio: $ ${tintosDestacados[i].precio}</p>
+              </div>
+              <div class="card-footer-destacado">
+                <button id="btntinto" class="btn btn-destacado">Ver mas</button>
+              </div>
+            </div>
+    `
+  }
+  document.getElementById("tintosDestacados").innerHTML = htmlTintos;
+}
+
+function blancosDisplay(blancosDestacados) {
+  var htmlBlancos = "";
+  for (var i = 0; i < blancosDestacados.length; i++) {
+    htmlBlancos += `
+    <div class="card cardDestacado">
+              <div class="image-wrapper"><img
+                  src="${blancosDestacados[i].image}"
+                  alt="${blancosDestacados[i].nombre}"></div>
+
+              <div class="card-body">
+                <p class="card-title title-destacado">${blancosDestacados[i].nombre}</p>
+                <p class="card-text text-destacado">Vino:${blancosDestacados[i].tipo}</p>
+                <p class="card-text text-destacado">Bodega:${blancosDestacados[i].bodega}</p>
+                <p class="card-text ">Precio: $ ${blancosDestacados[i].precio}</p>
+              </div>
+              <div class="card-footer-destacado">
+                <button id="btnblanco"class="btn btn-destacado">Ver mas</button>
+              </div>
+            </div>
+    `
+  }
+  document.getElementById("blancosDestacados").innerHTML = htmlBlancos;
+}
+
+function espumantesDisplay(espumantesDestacados) {
+  var htmlEspumantes = "";
+  for (var i = 0; i < espumantesDestacados.length; i++) {
+    htmlEspumantes += `
+    <div class="card cardDestacado">
+              <div class="image-wrapper"><img
+                  src="${espumantesDestacados[i].image}"
+                  alt="${espumantesDestacados[i].nombre}"></div>
+
+              <div class="card-body">
+                <p class="card-title title-destacado">${espumantesDestacados[i].nombre}</p>
+                <p class="card-text text-destacado">Vino:${espumantesDestacados[i].tipo}</p>
+                <p class="card-text text-destacado">Bodega:${espumantesDestacados[i].bodega}</p>
+                <p class="card-text ">Precio: $ ${espumantesDestacados[i].precio}</p>
+              </div>
+              <div class="card-footer-destacado">
+              <button id="btnEspumante" class="btn btn-destacado">Ver mas</button>
+              </div>
+            </div>
+    `
+  }
+  document.getElementById("espumantesDestacados").innerHTML = htmlEspumantes;
 }
