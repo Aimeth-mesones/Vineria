@@ -61,6 +61,11 @@ console.log(vinosEspumantes)
 console.log("estos son los vinos tintos")
 console.log(vinosTintos)
 
+var botonCompra=document.getElementById("btncompras")
+console.log(botonCompra)
+botonCompra.addEventListener("click",function(e) {
+  compras()
+})
 // capturando el id de la seccion a la que se hace click en la barra de navegacion
 var botonNav = document.getElementsByClassName("link")
 console.log(botonNav)
@@ -120,6 +125,7 @@ function navegacion(id) {
         document.getElementById("carouselAuto").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "flex",
         document.getElementById("detalles").style.display = "none",
+        document.getElementById("compras").style.display="flex,"
         console.log("estoy en home")
 
   }

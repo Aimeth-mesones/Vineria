@@ -226,7 +226,7 @@ main{
    flex-direction: row;
    justify-content: center;
 }
-.row{
+#tarjetas>.row{
     --bs-gutter-x: 3rem;
     --bs-gutter-y: 3rem;
 }
