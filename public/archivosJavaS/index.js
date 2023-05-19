@@ -233,7 +233,7 @@ function tintosDisplay(tintosDestacados) {
                 <p class="card-text ">Precio: $ ${tintosDestacados[i].precio}</p>
               </div>
               <div class="card-footer-destacado">
-                <button id="btntinto" class="btn btn-destacado">Ver mas</button>
+                <button id="${tintosDestacados[i].id}" class="btn btn-destacado">Ver mas</button>
               </div>
             </div>
     `
@@ -257,7 +257,7 @@ function blancosDisplay(blancosDestacados) {
                 <p class="card-text ">Precio: $ ${blancosDestacados[i].precio}</p>
               </div>
               <div class="card-footer-destacado">
-                <button id="btnblanco"class="btn btn-destacado">Ver mas</button>
+                <button id="${blancosDestacados[i].id}"class="btn btn-destacado">Ver mas</button>
               </div>
             </div>
     `
@@ -281,7 +281,7 @@ function espumantesDisplay(espumantesDestacados) {
                 <p class="card-text ">Precio: $ ${espumantesDestacados[i].precio}</p>
               </div>
               <div class="card-footer-destacado">
-              <button id="btnEspumante" class="btn btn-destacado">Ver mas</button>
+              <button id="${espumantesDestacados[i].id}" class="btn btn-destacado">Ver mas</button>
               </div>
             </div>
     `
