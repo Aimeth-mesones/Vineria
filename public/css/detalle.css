@@ -1,5 +1,5 @@
 /* ESTILOS DE LA SECCION DETALLES DE LOS VINOS */
-.detalles{
+.detalles {
     display: flex;
     width: 80%;
     height: auto;
@@ -7,15 +7,25 @@
     justify-content: center;
     align-items: center;
     column-gap: 40px;
+}
 
-    }
+.personalizada {
+    width: 50%;
+    height: auto;
+}
+.card-detalle{
+    height: 300px;
+    width: 40%;
+    box-shadow:none;
+    border:none;
+}
+.card-detalle>img{
+    max-height:100% ;
+    width: 40%;
     
-    .personalizada{
-        width: 50%;
-        height: auto;
-    }
-    /* alineacion de la tabla de ficha tecnica */
-    .text-center{
-        text-align: left !important;
-    }
-    
+}
+
+/* alineacion de la tabla de ficha tecnica */
+.text-center {
+    text-align: left !important;
+}

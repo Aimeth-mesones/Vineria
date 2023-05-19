@@ -2,6 +2,8 @@ function compras(){
     console.log("hice clic e boton compras")
     document.getElementById("carouselAuto").style.display="none"
     document.getElementById("destacadosVinos").style.display="none"
+    document.getElementById("compras").style.display="flex",
+    document.getElementById("tarjetas").style.display = "none",
     displaycompras(vinos)
 }
 let cantidadProducto=0
@@ -10,7 +12,7 @@ function displaycompras(vinos){
     var htmlcompras = "";
     for (var i = 0; i < vinos.length; i++) {
         htmlcompras += `
-        <div class="col">
+        <div class="col col-compras">
         <div class="card card-compra">
           <div class="img-card-compra"><img src="${vinos[i].image}" alt="imagen ${vinos[i].nombre}"></div>
           <div class="card-body body-compra">
@@ -68,21 +70,5 @@ function calculadora(id){
 
   var inputTotal = document.getElementById(newread);
 inputTotal.value = totalItem;
-
-
 }
-
-
-
-
-
-// var elemento=inputSoloLect[i].id
-//   var idItem=elemento.split("totalInput")
-//   console.log(idItem[1])
-// for(var i=0; i<inputSoloLect.length;i++){
-  
-//   if(idItem[1]=idSel[1]){
-//     console.log("coinciden los id")
-//   }
-// }
 

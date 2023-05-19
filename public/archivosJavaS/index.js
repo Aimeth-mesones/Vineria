@@ -47,6 +47,7 @@ async function getDB() {
       blancosDisplay(blancosDestacados)
       espumantesDisplay(espumantesDestacados)
 
+
     })
 }; getDB()
 
@@ -60,12 +61,12 @@ console.log("estos son los vinos espumantes")
 console.log(vinosEspumantes)
 console.log("estos son los vinos tintos")
 console.log(vinosTintos)
-
-var botonCompra=document.getElementById("btncompras")
+var botonCompra = document.getElementById("btncompras")
 console.log(botonCompra)
-botonCompra.addEventListener("click",function(e) {
+botonCompra.addEventListener("click", function (e) {
   compras()
 })
+
 // capturando el id de la seccion a la que se hace click en la barra de navegacion
 var botonNav = document.getElementsByClassName("link")
 console.log(botonNav)
@@ -92,6 +93,10 @@ function navegacion(id) {
       document.getElementById("carouselAuto").style.display = "none",
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
+        document.getElementById("compras").style.display = "none",
+        document.getElementById("vinosSeccion").style.display="flex",
+        document.getElementById("linea").style.display="flex",
+        document.getElementById("vinosSeccion").innerHTML="Nuestros Vinos",
         display(vinos),
         arrayBusqueda = vinos
       break;
@@ -100,6 +105,8 @@ function navegacion(id) {
         document.getElementById("carouselAuto").style.display = "none",
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
+        document.getElementById("compras").style.display = "none",
+        document.getElementById("vinosSeccion").innerHTML="Vinos Tintos",
         arrayBusqueda = vinosTintos,
         console.log("vinos tintos")
       break;
@@ -108,6 +115,10 @@ function navegacion(id) {
         document.getElementById("carouselAuto").style.display = "none",
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
+        document.getElementById("compras").style.display = "none",
+        document.getElementById("vinosSeccion").style.display="flex",
+        document.getElementById("linea").style.display="flex",
+        document.getElementById("vinosSeccion").innerHTML="Vinos Blancos",
         arrayBusqueda = vinosBlancos,
         console.log("vinos blancos")
       break;
@@ -116,6 +127,10 @@ function navegacion(id) {
         document.getElementById("carouselAuto").style.display = "none",
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
+        document.getElementById("compras").style.display = "none",
+        document.getElementById("vinosSeccion").style.display="flex",
+        document.getElementById("linea").style.display="flex",
+        document.getElementById("vinosSeccion").innerHTML="Vinos Espumantes",
         arrayBusqueda = vinosEspumantes,
         console.log("vinos espumantes")
       break;
@@ -125,7 +140,9 @@ function navegacion(id) {
         document.getElementById("carouselAuto").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "flex",
         document.getElementById("detalles").style.display = "none",
-        document.getElementById("compras").style.display="flex,"
+        document.getElementById("compras").style.display = "none",
+        document.getElementById("vinosSeccion").style.display="none",
+        document.getElementById("linea").style.display="none",
         console.log("estoy en home")
 
   }
@@ -143,7 +160,7 @@ function display(array) {
             </div>
               <div class="card-body">
                 <h5 class="card-title">${array[i].nombre}</h5>
-                <p class="text-muted">${array[i].bodega}</p>
+                <p class="text-muted">Bodega:${array[i].bodega}</p>
                 <p class="card-text">${array[i].notas}</p>
               </div>
               <div class="card-footer">               

@@ -1,5 +1,3 @@
-
-
 function displayDetalle(id) {
     console.log(id)
     console.log(vinos)
@@ -17,12 +15,10 @@ function displayDetalle(id) {
     var contenidoDetalle
     contenidoDetalle =
         `
-    <div class="card" style="width: 18rem;">
-    <img src=${detalleVino[0].image} class="card-img-top"
-    alt=${detalleVino[0].nombre}>
-  <div class="card-body">
-    <p class="card-text">Vino Trapiche Reserva Chardonnay</p>
-  </div>
+    <div class="card card-detalle">
+    <img src=${detalleVino[0].image} 
+    alt="${detalleVino[0].nombre}">
+ 
 </div>
 <!-- FICHA TECNICA -->
 <div class="card text-center personalizada">
@@ -31,35 +27,29 @@ function displayDetalle(id) {
       <li class="nav-item">
         <a class="nav-link active" aria-current="true" href="#">FICHA TÉCNICA</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ACERCA DE LA LINEA</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">OPINIONES</a>
-      </li>
     </ul>
   </div>
   <div class="card-body">
-    <table class="table table-dark table-hover">
+    <table class="table table-hover">
       <tbody>
         <tr>
-          <th scope="row">Bodega:</th>
+          <th scope="row">Bodega: ${detalleVino[0].bodega}</th>
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Región:</th>
+          <th scope="row">Región: ${detalleVino[0].region}</th>
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Viñedo:</th>
+          <th scope="row">Viñedo: ${detalleVino[0].viñedo}</th>
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Crianza:</th>
+          <th scope="row">Crianza: ${detalleVino[0].crianza}</th>
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Notas de Cata:</th>
+          <th scope="row">Notas de Cata:${detalleVino[0].notas}</th>
           <td></td>
         </tr>
         <tr>
@@ -67,15 +57,15 @@ function displayDetalle(id) {
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Varietal:</th>
+          <th scope="row">Varietal: ${detalleVino[0].varietal}</th>
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Presentación:</th>
+          <th scope="row">Presentación:${detalleVino[0].presentacion}</th>
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Tiempo de Crianza:</th>
+          <th scope="row">Tiempo de Crianza:${detalleVino[0].tiempo}</th>
           <td></td>
         </tr>
       </tbody>

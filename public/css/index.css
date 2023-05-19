@@ -1,17 +1,19 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 /* html{
     height: 100%;
 } */
-body{
+body {
     width: 100%;
-min-height: 100vh;
+    min-height: 100vh;
 }
+
 /* ESTILOS DEL HEADER */
-header{
+header {
     width: 100%;
     height: auto;
     display: flex;
@@ -23,39 +25,42 @@ header{
     top:0; */
 }
 
-.encabezado{
+.encabezado {
     background-color: black;
     display: flex;
     flex-direction: row;
-    width:100%;
+    width: 100%;
     height: 130px;
     justify-content: space-evenly;
     align-items: center;
 }
-.logo{
+
+.logo {
     display: flex;
     flex-direction: row;
-    height:95%;
+    height: 95%;
 }
 
-.d-flex{
+.d-flex {
     width: 25%;
     height: 50%;
 }
-.navbar{
-    background-color: #B1A303; 
+
+.navbar {
+    background-color: #B1A303;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50px;
-    
+
 }
+
 /* ESTILOS DEL MAIN */
 /* main general */
 
-main{
+main {
     height: auto;
     width: 100%;
     display: flex;
@@ -64,17 +69,20 @@ main{
     align-items: center;
     /* margin-top: 180px; */
 }
+
 /* ESTILOS DEL CAROUSEL */
 
-.carousel{
+.carousel {
     width: 100%;
     height: auto;
     /* display: none; */
-    
+
 }
-.carousel-inner{
+
+.carousel-inner {
     width: 100%;
 }
+
 .carousel-item {
     width: 100%;
     height: 50vh;
@@ -85,40 +93,43 @@ main{
     -o-background-size: cover;
     background-size: cover;
     color: #ffffff;
-  }
-.contenidoCarousel{
+}
+
+.contenidoCarousel {
     width: 80%;
     height: 90%;
     display: flex;
     flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 10%;
 }
-.fondo{
+
+.fondo {
     background-color: black;
     opacity: 50%;
     width: 70%;
     height: 90%;
     position: absolute;
     left: 15%;
-    top:5%;
+    top: 5%;
 }
 
 
 
-.gift{
+.gift {
     display: flex;
     flex-direction: row;
     position: relative;
-    left:100px;
-    width:30%;
+    left: 100px;
+    width: 30%;
     height: 200px;
     z-index: 10;
-} 
-.textoGift{
-    width:70%;
+}
+
+.textoGift {
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -126,39 +137,44 @@ main{
     row-gap: 20px;
     z-index: 10;
 }
-.tituloCarousel{
+
+.tituloCarousel {
     font-size: 2em;
     font-weight: bold;
 }
-.tituloDosCarousel{
+
+.tituloDosCarousel {
     font-size: 1.5em;
     font-weight: bold;
 }
-.tituloTresCarousel{
+
+.tituloTresCarousel {
     font-size: 1.2em;
 }
 
-.contenidoCarouselDos{
+.contenidoCarouselDos {
     width: 90%;
     height: 90%;
     display: flex;
     flex-direction: column;
-  justify-content:space-around;
-  align-items: center;
-  z-index: 10;
-  margin:0% 5%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    margin: 0% 5%;
 }
-.descripcionPromo{
+
+.descripcionPromo {
     width: 90%;
     height: 90%;
     display: flex;
     flex-direction: row;
-  justify-content:space-around;
-  align-items: flex-start;
-  z-index: 10;
-  margin:2% 5%;
+    justify-content: space-around;
+    align-items: flex-start;
+    z-index: 10;
+    margin: 2% 5%;
 }
-.textoPromo{
+
+.textoPromo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -166,7 +182,8 @@ main{
     row-gap: 20px;
     z-index: 10;
 }
-.textoDescuento{
+
+.textoDescuento {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -174,13 +191,14 @@ main{
     /* row-gap: 20px; */
     z-index: 10;
 }
-.formaDescuento{
+
+.formaDescuento {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    top:0%;
+    top: 0%;
     left: 0%;
     z-index: 3;
     width: 0px;
@@ -189,11 +207,12 @@ main{
     border-right: 50px solid #B1A303;
     border-bottom: 35px solid transparent;
     font-weight: bold;
-    color:antiquewhite;
+    color: antiquewhite;
 }
-.condicionDescuento{
+
+.condicionDescuento {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 10;
@@ -201,83 +220,96 @@ main{
 }
 
 /* CONTENIDO DE LA PAGINA */
-.btn{
+.btn {
     background-color: #8b0000;
     border-color: #8b0000;
-    color:white;
+    color: white;
+}
 
-}
-.btn:hover{
+.btn:hover {
     background-color: #B1A303;
-    border-color:#B1A303 ;
+    border-color: #B1A303;
 }
+
 /* CARTAS */
 .tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-   height: auto;
+    height: auto;
 }
-#tarjetas{
-   width: 90%;
-   margin-left: 5%;
-   margin-right: 5%;
-   margin-top: 50px;
-   margin-bottom: 3%;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+
+#tarjetas {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-#tarjetas>.row{
+
+#tarjetas>.row {
     --bs-gutter-x: 3rem;
     --bs-gutter-y: 3rem;
 }
 
 .card {
     text-align: justify;
-    height: 400px;
+    height: 410px;
     width: 350px;
+    margin: 1.5rem 0;
     justify-content: space-between;
     box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
 }
 
-.card-body{
+.card-body {
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 0.9em;
 }
-.card-footer{
+
+.card-footer {
     height: 10%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-.imageContent{
-    width:100%;
+
+.imageContent {
+    width: 100%;
     height: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.imageContent>img{
-    max-width:100%;
+
+.imageContent>img {
+    max-width: 100%;
     max-height: 100%;
 }
 
 
-.form{
-    margin:0;
+.form {
+    margin: 0;
     text-align: right;
 }
-.forma{
+
+.forma {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
-    top:0%;
+    top: 0%;
     left: 0%;
     z-index: 3;
     width: 0px;
@@ -286,184 +318,201 @@ main{
     border-right: 50px solid #B1A303;
     border-bottom: 35px solid transparent;
     font-weight: bold;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 /* SECCION DESTACADOS */
 
-.carousel-dark{
-    height:100% ;
+.carousel-dark {
+    height: 100%;
 }
 
-#destacadosVinos{
+#destacadosVinos {
     margin-top: 80px;
     margin-bottom: 50px;
-       width: 100%;
-       height: 400px;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items:center;
-   }
-   .tituloSeccionDestacado{
-       font-size: 1.5em;
-       font-weight: bolder;
-   }
-   p{
-       margin: 0%;
-   }
-   .misc{
-       background: none;
-       border: none;
-       border-top-width: 4px;
-       border-top-style: solid;
-       width: 300px;
-       margin: 0.5em auto;
-   }
-   .gray-misc{
-       border-top-color:#8b0000 ;
-   }
-   .contenidoSeccion{
-       width: 90%;
-       height: 100%;
-       margin: 2% 5% 0% 5%;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       align-items: center;
-   }
-   .cuadroImageSeccion{
-       background-color: burlywood;
-       width: 40%;
-       height: 100%;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: flex-start;
-   }
-   .contImgSeccion{
-       width: 50%;
-       height: 95%;
-       background-image:url(../multimedia/destacadavinos.jpg) ;
-       background-size: contain;
-       background-repeat: no-repeat;
-   }
-   .infoSeccion{
-       width: 60%;
-       height: 100%;
-   }
-   .carousel-dark{
-       height:100% ;
-   }
-   .innerDestacado{
-       width: 80%;
-       height: 100%;
-       margin-left: 12%;
-    
-       
-   }
-   .item-destacado{
-       height: 100%;
-       width: 98%;
-   }
-   .cards-wrapper{
-   display: flex;
- 
-   height: 100%;
-  width:100%;
-   
-   }
-   .cardDestacado{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloSeccionDestacado {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+p {
+    margin: 0%;
+}
+
+.misc {
+    background: none;
+    border: none;
+    border-top-width: 4px;
+    border-top-style: solid;
+    width: 300px;
+    margin: 0.5em auto;
+}
+
+.gray-misc {
+    border-top-color: #8b0000;
+}
+
+.contenidoSeccion {
+    width: 90%;
+    height: 100%;
+    margin: 2% 5% 0% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuadroImageSeccion {
+    background-color: burlywood;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contImgSeccion {
+    width: 50%;
+    height: 95%;
+    background-image: url(../multimedia/destacadavinos.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.infoSeccion {
+    width: 60%;
+    height: 100%;
+}
+
+.carousel-dark {
+    height: 100%;
+}
+
+.innerDestacado {
+    width: 80%;
+    height: 100%;
+    margin-left: 12%;
+
+
+}
+
+.item-destacado {
+    height: 100%;
+    width: 98%;
+}
+
+.cards-wrapper {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.cardDestacado {
     margin: 0 2em;
     height: 100%;
     width: calc(100%/2);
-       color:black;
-       border: solid 2px rgba(0, 0, 0, 0.225);
-       border-radius: 10px;
-       align-items: center;
-   }
-   .image-wrapper{
-       height: 55%;
-       border-radius: 10px;
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: center;
-   }
-   .image-wrapper img{
-       max-width: 100%;
-       max-height: 100%;
-       border-radius: 10px;
-   }
-   .title-destacado{
-       font-size: 1.2em;
-       font-weight: bolder;
-   }
-   .text-destacado{
-       font-size: 1em;
-       font-style: italic;
-       margin:0;
-   }
-   .btn-destacado{
-       background-color: burlywood;
-       border: burlywood;
-       color:black;
-   }
-   .btn-destacado:hover{
-       background-color: #8b0000;
-       border-color:#8b0000 ;
-       color:white;
-   }
+    color: black;
+    border: solid 2px rgba(0, 0, 0, 0.225);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.image-wrapper {
+    height: 55%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.title-destacado {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.text-destacado {
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+}
+
+.btn-destacado {
+    background-color: burlywood;
+    border: burlywood;
+    color: black;
+}
+
+.btn-destacado:hover {
+    background-color: #8b0000;
+    border-color: #8b0000;
+    color: white;
+}
 
 /*TRABAJANDO EN EL FOOTER*/
 
-.footer{
+.footer {
     width: 100%;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     margin-top: 40px;
-    background:black;
+    background: black;
     color: #fff;
 }
 
-.footer-contain{
+.footer-contain {
     display: flex;
     gap: 80px;
     padding: 40px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.mail-footer{
+.mail-footer {
     display: flex;
     gap: 5px;
 }
 
-.footer-content2{
+.footer-content2 {
     display: flex;
     gap: 50px;
 }
 
-.footer-content2-link{
+.footer-content2-link {
     display: flex;
     flex-direction: column;
 }
 
 
-.copyright{
+.copyright {
     width: 100%;
     display: flex;
     font-size: 1.1rem;
-    background:#B1A303 ;
+    background: #B1A303;
     padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 15px;
     font-style: italic;
 }
-
-

@@ -7,14 +7,18 @@
     justify-content: center;
     align-items: center;
 }
+.col-compras{
+    width:30%;
+    height:150px;
+}
+
 .card-compra{
-    width: 60%;
-    height:350px;
+    width:100%;
+    max-height:100%;
     margin-bottom: 1em;
 }
 .img-card-compra{
     height: 50%;
-   
        border-radius: 10px;
        display: flex;
        flex-direction: column;
@@ -48,12 +52,12 @@
     margin:0 0.235em;
 }
 
-.parteuno>.form-control{
-    line-height: 0.5;
+.parteuno{
+    line-height: 0.7em;
     font-size: 0.9em;
 }
-.footer-compra>.input-group>.input-group-text{
-    line-height: 0.5;
-    font-size: 0.8em;
-    margin:0 0.235em;
+.footer-compra>.input-group{
+    line-height: 0.4em;
+    font-size: 0.4em;
+    margin:0.4em 0;
 }
