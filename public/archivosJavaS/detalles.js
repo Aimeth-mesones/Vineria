@@ -53,7 +53,7 @@ function displayDetalle(id) {
           <td></td>
         </tr>
         <tr>
-          <th scope="row">Tipo de productos:</th>
+          <th scope="row">Tipo de producto: Vino ${detalleVino[0].tipo}</th>
           <td></td>
         </tr>
         <tr>

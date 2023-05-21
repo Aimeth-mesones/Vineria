@@ -266,6 +266,11 @@ main {
     box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
+  
+    
+}
+.card:hover{
+    scale: 1.05;
 }
 
 .card-body {
@@ -401,8 +406,6 @@ p {
     width: 80%;
     height: 100%;
     margin-left: 12%;
-
-
 }
 
 .item-destacado {
@@ -426,6 +429,7 @@ p {
     border: solid 2px rgba(0, 0, 0, 0.225);
     border-radius: 10px;
     align-items: center;
+    
 }
 
 .image-wrapper {
