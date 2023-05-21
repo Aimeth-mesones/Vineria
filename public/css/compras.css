@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .contenedor-compras{
     width: 100%;
@@ -121,6 +122,9 @@
 
 }
 .cont-carritoImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   width:30%;
     height: 100%;
     margin-right: 20px;
@@ -145,4 +149,26 @@
     width:100%;
    padding: 8px 0;
     text-align: center;
+}
+
+.formaDescCarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   top:0;
+    left: 0%;
+    z-index: 3;
+    width: 0px;
+    height: 40px;
+    border-left: 30px solid #B1A303;
+    border-right: 30px solid #B1A303;
+    border-bottom: 20px solid transparent;
+    font-weight: bold;
+    color: antiquewhite;
+    text-align: center;
+}
+.oculto{
+    display: none !important;
 }

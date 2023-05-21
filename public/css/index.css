@@ -192,23 +192,6 @@ main {
     z-index: 10;
 }
 
-.formaDescuento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 0%;
-    left: 0%;
-    z-index: 3;
-    width: 0px;
-    height: 180px;
-    border-left: 50px solid #B1A303;
-    border-right: 50px solid #B1A303;
-    border-bottom: 35px solid transparent;
-    font-weight: bold;
-    color: antiquewhite;
-}
 
 .condicionDescuento {
     display: flex;
@@ -218,7 +201,9 @@ main {
     z-index: 10;
     font-size: 1.1em;
 }
-
+.hidden {
+    display: none !important;
+  }
 /* CONTENIDO DE LA PAGINA */
 .btn {
     background-color: #8b0000;
@@ -273,6 +258,24 @@ main {
     scale: 1.05;
 }
 
+.formaDescuento {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   top:0;
+    left: 0%;
+    z-index: 3;
+    width: 0px;
+    height: 100px;
+    border-left: 50px solid #B1A303;
+    border-right: 50px solid #B1A303;
+    border-bottom: 35px solid transparent;
+    font-weight: bold;
+    color: antiquewhite;
+    text-align: center;
+}
 .card-body {
     height: 50%;
     display: flex;
@@ -469,7 +472,23 @@ p {
     border-color: #8b0000;
     color: white;
 }
+.botonesDetalles{
+    line-height: 1 !important;
+    text-align: center;
+}
 
+#btncompras{
+    position: fixed;
+    bottom:300px;
+    right: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: burlywood;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 4;
+}
 /*TRABAJANDO EN EL FOOTER*/
 
 .footer {

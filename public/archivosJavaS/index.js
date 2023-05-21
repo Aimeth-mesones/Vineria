@@ -94,9 +94,10 @@ function navegacion(id) {
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
         document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display="flex",
-        document.getElementById("linea").style.display="flex",
-        document.getElementById("vinosSeccion").innerHTML="Nuestros Vinos",
+        document.getElementById("vinosSeccion").style.display = "flex",
+        document.getElementById("linea").style.display = "flex",
+        document.getElementById("vinosSeccion").innerHTML = "Nuestros Vinos",
+        document.getElementById("btncompras").style.visibility="visible",
         display(vinos),
         arrayBusqueda = vinos
       break;
@@ -106,7 +107,8 @@ function navegacion(id) {
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
         document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").innerHTML="Vinos Tintos",
+        document.getElementById("vinosSeccion").innerHTML = "Vinos Tintos",
+        document.getElementById("btncompras").style.visibility="visible",
         arrayBusqueda = vinosTintos,
         console.log("vinos tintos")
       break;
@@ -116,9 +118,10 @@ function navegacion(id) {
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
         document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display="flex",
-        document.getElementById("linea").style.display="flex",
-        document.getElementById("vinosSeccion").innerHTML="Vinos Blancos",
+        document.getElementById("vinosSeccion").style.display = "flex",
+        document.getElementById("linea").style.display = "flex",
+        document.getElementById("vinosSeccion").innerHTML = "Vinos Blancos",
+        document.getElementById("btncompras").style.visibility="visible",
         arrayBusqueda = vinosBlancos,
         console.log("vinos blancos")
       break;
@@ -128,10 +131,11 @@ function navegacion(id) {
         document.getElementById("tarjetas").style.display = "flex",
         document.getElementById("destacadosVinos").style.display = "none",
         document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display="flex",
-        document.getElementById("linea").style.display="flex",
-        document.getElementById("vinosSeccion").innerHTML="Vinos Espumantes",
+        document.getElementById("vinosSeccion").style.display = "flex",
+        document.getElementById("linea").style.display = "flex",
+        document.getElementById("vinosSeccion").innerHTML = "Vinos Espumantes",
         arrayBusqueda = vinosEspumantes,
+        document.getElementById("btncompras").style.visibility="visible",
         console.log("vinos espumantes")
       break;
 
@@ -141,37 +145,42 @@ function navegacion(id) {
         document.getElementById("destacadosVinos").style.display = "flex",
         document.getElementById("detalles").style.display = "none",
         document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display="none",
-        document.getElementById("linea").style.display="none",
+        document.getElementById("vinosSeccion").style.display = "none",
+        document.getElementById("linea").style.display = "none",
+        document.getElementById("btncompras").style.visibility="visible",
         console.log("estoy en home")
 
   }
 }
 
 function display(array) {
-
   var html = "";
   for (var i = 0; i < array.length; i++) {
+    var promo = array[i].promo;
+    var descuentoVisible = promo !== 0 ? "" : "hidden"; 
     html += `
         <div class="col">
           <div class="card">
             <div class="imageContent">
               <img src="${array[i].image}">
             </div>
-              <div class="card-body">
+            <div class="card-body">
                 <h5 class="card-title">${array[i].nombre}</h5>
                 <p class="text-muted">Bodega:${array[i].bodega}</p>
                 <p class="card-text">${array[i].notas}</p>
-              </div>
-              <div class="card-footer">               
+            </div>
+            <div class="card-footer">               
                 <p class="card-text">Precio: $ ${array[i].precio}</p>
                 <button id=${array[i].id} class="btn btn-primary botonesDetalles ">Más Info</button>
-              </div>
+            </div>
+            <div class="formaDescuento ${descuentoVisible}" id=descuento${array[i].id} ><p>${promo}% OFF</p></div>
           </div>
         </div>
         `
+  
+       
   }
-
+  
   document.getElementById("tarjetas").innerHTML = html;
   var botones = document.querySelectorAll(".botonesDetalles")
   for (var i = 0; i < botones.length; i++) {

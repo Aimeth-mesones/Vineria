@@ -7,13 +7,17 @@ function compras() {
   document.getElementById("seccionCompras").style.display = "flex",
     document.getElementById("tarjetas").style.display = "none",
     document.getElementById("vinosSeccion").innerHTML = "Calculadora de Pedidos",
-    displaycompras(vinos)
+    displaycompras(vinos),
+    document.getElementById("btncompras").style.visibility="hidden"
 }
+
 let cantidadProducto = 0
 let inputSoloLect = []
 function displaycompras(vinos) {
   var htmlcompras = "";
   for (var i = 0; i < vinos.length; i++) {
+    var promo = vinos[i].promo;
+    var descuentoVisible = promo !== 0 ? "" : "oculto"; 
     htmlcompras += `
         <div class="col col-compras">
            <div class="card card-compra">
@@ -32,6 +36,7 @@ function displaycompras(vinos) {
                 <span class="input-group-text">Total Item: $</span>
                 <input type="number" readonly class="form-control col-7 inputcompra" id="totalInput${vinos[i].id}">
               </div>
+              <div class="formaDescCarrito ${descuentoVisible}" id=descuento${vinos[i].id} ><p>${promo}%-</p></div>
           
             </div>
         </div>
@@ -68,7 +73,7 @@ function calculadora(id) {
   
   for (var i = 0; i < vinos.length; i++) {
     if (vinos[i].id == idSelected) {
-      totalItem = vinos[i].precio * cantidadProducto
+      totalItem = (vinos[i].precio * cantidadProducto)-((vinos[i].precio * cantidadProducto)*(vinos[i].promo/100))
       vinos[i].cantidad = cantidadProducto
       if (!carrito.some(item => item.id === vinos[i].id)) {
         carrito.push(vinos[i]);
