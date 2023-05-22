@@ -1,4 +1,5 @@
 const coleccionVinos = firebase.firestore().collection("vinos");
+const coleccionBodegas = firebase.firestore().collection("bodegas");
 
 // llama a la coleccion que creamos en firebase database
 
@@ -12,6 +13,8 @@ let tintosDestacados = []
 let blancosDestacados = []
 let espumantesDestacados = []
 let vinosDestacados = []
+let dataBodegas = []
+let bodegas=[]
 
 async function getDB() {
   await coleccionVinos.get()
@@ -50,6 +53,25 @@ async function getDB() {
 
     })
 }; getDB()
+
+async function getBodegas() {
+  await coleccionBodegas.get()
+    .then((results) => {
+      console.log(results)
+      const data = results.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      // console.log(data)
+      dataBodegas.push(...data)
+
+      bodegas = dataBodegas
+      console.log(bodegas)
+      
+
+    })
+}; getBodegas()
+
 
 console.log("vinos Destacados", vinosDestacados)
 
@@ -97,6 +119,7 @@ function navegacion(id) {
         document.getElementById("vinosSeccion").style.display = "flex",
         document.getElementById("linea").style.display = "flex",
         document.getElementById("vinosSeccion").innerHTML = "Nuestros Vinos",
+        document.getElementById("detalles").style.display = "none",
         document.getElementById("btncompras").style.visibility="visible",
         display(vinos),
         arrayBusqueda = vinos
@@ -109,6 +132,7 @@ function navegacion(id) {
         document.getElementById("seccionCompras").style.display = "none",
         document.getElementById("vinosSeccion").innerHTML = "Vinos Tintos",
         document.getElementById("btncompras").style.visibility="visible",
+        document.getElementById("detalles").style.display = "none",
         arrayBusqueda = vinosTintos,
         console.log("vinos tintos")
       break;
@@ -121,6 +145,7 @@ function navegacion(id) {
         document.getElementById("vinosSeccion").style.display = "flex",
         document.getElementById("linea").style.display = "flex",
         document.getElementById("vinosSeccion").innerHTML = "Vinos Blancos",
+        document.getElementById("detalles").style.display = "none",
         document.getElementById("btncompras").style.visibility="visible",
         arrayBusqueda = vinosBlancos,
         console.log("vinos blancos")
@@ -134,6 +159,7 @@ function navegacion(id) {
         document.getElementById("vinosSeccion").style.display = "flex",
         document.getElementById("linea").style.display = "flex",
         document.getElementById("vinosSeccion").innerHTML = "Vinos Espumantes",
+        document.getElementById("detalles").style.display = "none",
         arrayBusqueda = vinosEspumantes,
         document.getElementById("btncompras").style.visibility="visible",
         console.log("vinos espumantes")

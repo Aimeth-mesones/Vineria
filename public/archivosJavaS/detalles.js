@@ -14,12 +14,23 @@ function displayDetalle(id) {
 
     var contenidoDetalle
     contenidoDetalle =
-        `
-    <div class="card card-detalle">
-    <img src=${detalleVino[0].image} 
-    alt="${detalleVino[0].nombre}">
- 
-</div>
+        `<div class="detalleIzquierda">
+            <div class="tituloDetalle"><p>${detalleVino[0].nombre}</p></div>
+            <div class="galeriaDetalle">
+              <div class="card card-detalle">
+                <img src=${detalleVino[0].image} alt="${detalleVino[0].nombre}">
+              </div>
+              <div class="card card-detalle">
+                <img src=${detalleVino[0].imageDos} alt="${detalleVino[0].nombre}">
+              </div>
+            </div>
+            <div class="iconos">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-regular fa-envelope-open"></i>
+            </div>
+        </div>
+
 <!-- FICHA TECNICA -->
 <div class="card text-center personalizada">
   <div class="card-header">
