@@ -24,6 +24,15 @@ header {
     left: 0;
     top:0; */
 }
+.nav-pills .nav-link.active {
+    --bs-nav-pills-link-active-bg: #EFC2C0;
+    --bs-nav-pills-link-active-color: black;
+} 
+.nav{
+    --bs-nav-link-color:black;
+}
+
+
 
 .encabezado {
     background-color: black;
@@ -466,7 +475,16 @@ p {
     border: burlywood;
     color: black;
 }
+/* BODEGAS EN HOME */
+#bodegasHome{
+    width: 90%;
+    height: auto;
+    background-color: #B1A303;
+}
 
+.cuadro-wrapper{
+
+}
 .btn-destacado:hover {
     background-color: #8b0000;
     border-color: #8b0000;

@@ -294,9 +294,7 @@ function tintosDisplay(tintosDestacados) {
                 <p class="card-text text-destacado">Bodega: ${tintosDestacados[i].bodega}</p>
                 <p class="card-text ">Precio: $ ${tintosDestacados[i].precio}</p>
               </div>
-              <div class="card-footer-destacado">
-                <button id="${tintosDestacados[i].id}" class="btn btn-destacado">Ver mas</button>
-              </div>
+              
             </div>
     `
   }

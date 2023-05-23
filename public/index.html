@@ -38,17 +38,14 @@
     <button type="button" id="btncompras"><i class="fa-solid fa-cart-shopping"></i></button>
 
     <!-- BARRA DE NAVEGACION -->
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
+    <nav class="navbar" data-bs-theme="dark">
+      <div class="container">
+        <ul class="nav nav-pills">
           <li class="nav-item">
             <a class="nav-link link" aria-current="page" href="#" id="home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link link" href="#" id="bodegas">Bodegas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link" href="#" id="regalos">Regalos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link link" href="#" id="vinos">Todos los Vinos</a>
@@ -166,7 +163,35 @@
         </div>
       </div>
     </section>
+    <section id="bodegasHome">
+      <div class="contenedorBodegasHome">
+        <div class="cuadro-wrapper">
+          <div class="card text-bg-dark">
+            <img src="..." class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
 
+        </div>
+      </div>
+      <div class="cuadro-wrapper">
+        <div class="card text-bg-dark">
+          <img src="..." class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
 
     <!-- SECCION DE TIPOS DE VINOS -->
     <section class="tarjetas">
@@ -196,7 +221,6 @@
     <section class="bodegas" id="seccionBodegas">
       <p class="tituloSeccionDestacado" id="tituloSeccion"></p>
       <hr class="misc gray-misc" id="linea">
-      <!-- copiar desde la linea 200 a la 212 en el js para hacer dinamico -->
       <div class="card card-bodega">
         <img src="./multimedia/larural_fotobodega.jpg" class="card-img-top" alt="...">
         <div class="card-body body-bodegas">
