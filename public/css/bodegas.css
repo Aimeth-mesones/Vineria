@@ -1,0 +1,56 @@
+#seccionBodegas{
+    display: none;
+}
+.bodegas{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-bodega{
+width:40%;
+height:450px;
+overflow: hidden;
+margin-top: 50px;
+margin-bottom: 80px;
+}
+.card-bodega>img{
+    height: 100%;
+    transition: .5s;
+}
+.body-bodegas{
+height: 10%;
+background-color: burlywood;
+position: absolute;
+bottom: 0;
+}
+.card-bodega:hover{
+    cursor:pointer;
+}
+
+.textoBodega{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.card-bodega:hover .body-bodegas{
+    height: 40%;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.765);
+}
+.card-bodega:hover .textoBodega{
+    opacity: 1;
+    visibility: visible;
+    color:antiquewhite;
+    
+   
+}
+.card-bodega:hover .card-title{
+    color:antiquewhite
+}
+.card-bodega:hover>img{
+    scale: 1.2em;
+}

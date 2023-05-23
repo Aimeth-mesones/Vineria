@@ -105,6 +105,16 @@ function navegacion(id) {
   switch (id) {
     case "bodegas":
       console.log("estoy en bodegas")
+      document.getElementById("seccionBodegas").style.display="flex",
+      document.getElementById("tituloSeccion").innerHTML="Nuestras Bodegas Favoritas",
+      document.getElementById("carouselAuto").style.display = "none",
+      document.getElementById("destacadosVinos").style.display = "none",
+        document.getElementById("seccionCompras").style.display = "none",
+        document.getElementById("detalles").style.display = "none",
+        document.getElementById("vinosSeccion").style.display = "none",
+        document.getElementById("linea").style.display = "none",
+        document.getElementById("tarjetas").style.display = "none"
+       
       break;
     case "regalos":
       console.log("estoy en regalos")
