@@ -477,6 +477,8 @@ p {
 }
 /* BODEGAS EN HOME */
 #bodegasHome{
+    display:flex;
+    flex-direction: row;
     width: 90%;
     height: auto;
     background-color: #B1A303;
