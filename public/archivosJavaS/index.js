@@ -42,7 +42,7 @@ async function getDB() {
         }
       }
 
-      // ordenVinos(vinos)
+     
       ordenBlancos()
       ordenTintos()
       ordenEspumantes()
@@ -67,7 +67,7 @@ async function getBodegas() {
 
       bodegas = dataBodegas
       console.log(bodegas)
-      
+      mostrarbodegas(bodegas)
 
     })
 }; getBodegas()
@@ -111,14 +111,16 @@ function navegacion(id) {
       document.getElementById("destacadosVinos").style.display = "none",
         document.getElementById("seccionCompras").style.display = "none",
         document.getElementById("detalles").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "none",
+        document.getElementById("vinosSeccion").style.display = "flex",
         document.getElementById("linea").style.display = "none",
-        document.getElementById("tarjetas").style.display = "none"
+        document.getElementById("tarjetas").style.display = "none",
+        document.getElementById("nosotros").style.display="none",
+        document.getElementById("bodegasHome").style.display="none",
+       
+        mostrarbodegas(bodegas)
        
       break;
-    case "regalos":
-      console.log("estoy en regalos")
-      break;
+   
     case "vinos":
       console.log("todos los vinos"),
         console.log(vinos)
@@ -131,6 +133,8 @@ function navegacion(id) {
         document.getElementById("vinosSeccion").innerHTML = "Nuestros Vinos",
         document.getElementById("detalles").style.display = "none",
         document.getElementById("btncompras").style.visibility="visible",
+        document.getElementById("nosotros").style.display="none",
+        document.getElementById("bodegasHome").style.display="none",
         display(vinos),
         arrayBusqueda = vinos
       break;
@@ -143,6 +147,8 @@ function navegacion(id) {
         document.getElementById("vinosSeccion").innerHTML = "Vinos Tintos",
         document.getElementById("btncompras").style.visibility="visible",
         document.getElementById("detalles").style.display = "none",
+        document.getElementById("nosotros").style.display="none",
+        document.getElementById(" bodegasHome").style.display="none",
         arrayBusqueda = vinosTintos,
         console.log("vinos tintos")
       break;
@@ -157,6 +163,8 @@ function navegacion(id) {
         document.getElementById("vinosSeccion").innerHTML = "Vinos Blancos",
         document.getElementById("detalles").style.display = "none",
         document.getElementById("btncompras").style.visibility="visible",
+        document.getElementById("nosotros").style.display="none",
+        document.getElementById(" bodegasHome").style.display="none",
         arrayBusqueda = vinosBlancos,
         console.log("vinos blancos")
       break;
@@ -172,6 +180,8 @@ function navegacion(id) {
         document.getElementById("detalles").style.display = "none",
         arrayBusqueda = vinosEspumantes,
         document.getElementById("btncompras").style.visibility="visible",
+        document.getElementById("nosotros").style.display="none",
+        document.getElementById(" bodegasHome").style.display="none",
         console.log("vinos espumantes")
       break;
 
@@ -184,6 +194,7 @@ function navegacion(id) {
         document.getElementById("vinosSeccion").style.display = "none",
         document.getElementById("linea").style.display = "none",
         document.getElementById("btncompras").style.visibility="visible",
+        document.getElementById("nosotros").style.display="none",
         console.log("estoy en home")
 
   }
@@ -294,7 +305,6 @@ function tintosDisplay(tintosDestacados) {
                 <p class="card-text text-destacado">Bodega: ${tintosDestacados[i].bodega}</p>
                 <p class="card-text ">Precio: $ ${tintosDestacados[i].precio}</p>
               </div>
-              
             </div>
     `
   }
@@ -316,9 +326,7 @@ function blancosDisplay(blancosDestacados) {
                 <p class="card-text text-destacado">Bodega:${blancosDestacados[i].bodega}</p>
                 <p class="card-text ">Precio: $ ${blancosDestacados[i].precio}</p>
               </div>
-              <div class="card-footer-destacado">
-                <button id="${blancosDestacados[i].id}"class="btn btn-destacado">Ver mas</button>
-              </div>
+          
             </div>
     `
   }
@@ -340,11 +348,10 @@ function espumantesDisplay(espumantesDestacados) {
                 <p class="card-text text-destacado">Bodega:${espumantesDestacados[i].bodega}</p>
                 <p class="card-text ">Precio: $ ${espumantesDestacados[i].precio}</p>
               </div>
-              <div class="card-footer-destacado">
-              <button id="${espumantesDestacados[i].id}" class="btn btn-destacado">Ver mas</button>
-              </div>
+              
             </div>
     `
   }
   document.getElementById("espumantesDestacados").innerHTML = htmlEspumantes;
 }
+
