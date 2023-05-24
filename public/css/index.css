@@ -483,7 +483,8 @@ p {
 }
 
 .cuadro-wrapper{
-
+width: 90%;
+background-color: blueviolet;
 }
 .btn-destacado:hover {
     background-color: #8b0000;
