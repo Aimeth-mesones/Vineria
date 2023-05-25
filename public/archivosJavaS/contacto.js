@@ -1,13 +1,9 @@
-let datosForm;
 function construyeFormulario(){
-    var form = document.getElementById("formulario")
-    var saludoHtml = document.getElementById("saludo")
-   
-    saludoHtml.style.display = "none"
-   
-   form.innerHTML =
-   `
-<form>
+
+   var formularioContacto = document.getElementById("formulario")  
+   formularioContacto.innerHTML =
+  `
+<form id="formContacto">
 <label for="tunombre">Nombre</label>
 <input type="text" id="tunombre" name="tunombre" placeholder="ingrese nombre y apellido">
 
@@ -21,29 +17,33 @@ function construyeFormulario(){
 <label for="tumensaje">Mensage</label>
 <textarea id="tumensaje" name="tumensaje" placeholder="Dejanos tu mensaje"></textarea>
 
-<button type="submit">Enviar</button>
+<input type="submit" value="Enviar">
 </form>
 `
-var formDatos = document.querySelector("form")
-formDatos.addEventListener("submit",(evento)=>{contactForm (evento)})
-     
-function contactForm(evento){
-   //    evento.preventDefault()
-   console.log(evento)
-
-//        datosForm ={
-//         nombre: evento.target[0].value,
-//           email: evento.target[1].value,
-//           telefono:evento.target[2].value,
-//           mensaje: evento.target[3].value,    
-//        }
-//           console.log(datosForm)
-//   saludo(datosForm)
- 
- }
+    
 }
 
 
+     
+function capturaDatosContacto(evento){
+   evento.preventDefault()
+   console.log(evento)
+
+       let datosForm ={
+        nombre: evento.target[0].value,
+          email: evento.target[1].value,
+          telefono:evento.target[2].value,
+          mensaje: evento.target[3].value,    
+       }
+          console.log(datosForm)
+  saludo(datosForm)
+}
+ 
+
+
+ var saludoHtml = document.getElementById("saludo")
+   
+ saludoHtml.style.display = "none"
  
     function saludo(datosForm) {
   

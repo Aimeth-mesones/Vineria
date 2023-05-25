@@ -48,7 +48,7 @@ label {
     width: 100%;
 }
 
-button[type=submit] {
+input[type=submit] {
     background-color: #B1A303;
     color: white;
     padding: 12px 20px;

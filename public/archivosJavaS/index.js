@@ -204,8 +204,10 @@ function navegacion(id) {
       break;
 
     case "enlaceContacto":
-      construyeFormulario(),
-        document.getElementById("seccionContacto").style.display = "flex",
+      construyeFormulario()
+      let formContacto = document.getElementById("formContacto")
+      formContacto.addEventListener("submit", function (evento) {capturaDatosContacto(evento)})
+      document.getElementById("seccionContacto").style.display = "flex",
         document.getElementById("tarjetas").style.display = "none",
         document.getElementById("carouselAuto").style.display = "none",
         document.getElementById("destacadosVinos").style.display = "none",
@@ -245,7 +247,7 @@ function navegacion(id) {
         document.getElementById("destacadosVinos").style.display = "none",
         document.getElementById("bodegasHome").style.display = "none",
         document.getElementById("carouselAuto").style.display = "none"
-        document.getElementById("btncompras").style.visibility = "hidden"
+      document.getElementById("btncompras").style.visibility = "hidden"
       break;
 
     default:
