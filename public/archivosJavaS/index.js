@@ -206,6 +206,7 @@ function navegacion(id) {
     case "enlaceContacto":
       construyeFormulario()
       let formContacto = document.getElementById("formContacto")
+     
       formContacto.addEventListener("submit", function (evento) {capturaDatosContacto(evento)})
       document.getElementById("seccionContacto").style.display = "flex",
         document.getElementById("tarjetas").style.display = "none",

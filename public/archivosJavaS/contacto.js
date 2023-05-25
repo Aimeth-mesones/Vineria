@@ -1,3 +1,4 @@
+let datosForm
 function construyeFormulario(){
 
    var formularioContacto = document.getElementById("formulario")  
@@ -29,7 +30,7 @@ function capturaDatosContacto(evento){
    evento.preventDefault()
    console.log(evento)
 
-       let datosForm ={
+        datosForm ={
         nombre: evento.target[0].value,
           email: evento.target[1].value,
           telefono:evento.target[2].value,
