@@ -1,0 +1,30 @@
+@media only screen and (min-width:320px)and(max-width: 480px){
+    .encabezado{
+          height: 50px;
+      }
+      .logo{
+          height: 30%;
+      }
+      .navbar{
+          height: 200px !important;
+      }
+      .navbar .container-fluid{
+          height: 100%;
+      }
+      main{
+          margin-top: 250px;
+      }
+      .carousel-item{
+        min-height: 200px;
+      }
+     .contenidoSeccion{
+      flex-direction: column;
+     }
+  }
+  @media only screen and (min-width:768px)and (max-width: 1024px){
+  
+  }
+  
+  @media only screen and (min-width:1200px){
+  
+  }

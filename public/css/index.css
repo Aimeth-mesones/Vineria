@@ -20,9 +20,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* position: fixed;
-    left: 0;
-    top:0; */
 }
 
 .nav-pills .nav-link.active {
@@ -33,8 +30,6 @@ header {
 .nav {
     --bs-nav-link-color: black;
 }
-
-
 
 .encabezado {
     background-color: black;
@@ -566,8 +561,8 @@ p {
     align-items: center;
 }
 .card-noticias{
-    width: calc(100%/3);
-    margin:5px 10px;
+    width: 300px;
+    margin:5px 20px;
     height: 360px;
 }
 .contenedorImagen{
@@ -575,8 +570,13 @@ p {
 height: 60%;
 }
 .contenedorImagen>img{
+    height: 100%;
     max-height: 100%;
-    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+.card-noticias .card-title{
+    font-size: 1.1em;
 }
 .body-noticias{
     width: 100%;
@@ -693,3 +693,4 @@ height: 60%;
     list-style: none;
     color: white;
 }
+
