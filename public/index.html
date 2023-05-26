@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./css/bodegas.css">
   <link rel="stylesheet" href="./css/nosotros.css">
   <link rel="stylesheet" href="./css/contacto.css">
+  <link rel="stylesheet" href="./css/giftcard.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <title>Vitis Dorada</title>
 </head>
@@ -30,7 +31,7 @@
           src="https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2FLogotipo_vitis.png?alt=media&token=16898d51-a81f-48cc-aacf-b7f136a72e56"
           alt="Logo vitis Dorada">
       </div>
-      <div class="d-flex">
+      <div class="d-flex" id="elementoBusqueda">
         <input class="form-control me-2" type="search" placeholder="Busca tu bodega favorita" aria-label="Search"
           id="busqueda">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -72,7 +73,7 @@
         <button type="button" data-bs-target="#carouselAuto" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active"
+        <div class="carousel-item active" id="carouselGift"
           style="background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2Fcarouselimageuno.jpg?alt=media&token=da69625e-cdc9-4637-a3b8-bb341dca3d0c);">
           <div class="fondo"></div>
           <div class="contenidoCarousel">
@@ -89,7 +90,7 @@
           </div>
         </div>
 
-        <div class="carousel-item"
+        <div class="carousel-item" id="carouselPromo"
           style="background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2Fcarouselimagedos.jpg?alt=media&token=30b1c633-59c3-44a8-baef-212e454006ed);">
           <div class="fondo"></div>
           <div class="contenidoCarouselDos">
@@ -98,7 +99,6 @@
                 <p class="tituloCarousel">Etiqueta Dorada</p>
                 <p class="tituloDosCarousel">Promo Otoño-Invierno</p>
                 <p class="tituloTresCarousel">Busca la etiqueta dorada en articulos seleccionados</p>
-                <button type="button" class="btn btn-dark">Ver Promos</button>
               </div>
               <div class="textoDescuento">
                 <div class="formaDescuento">
@@ -132,7 +132,7 @@
     <!-- HOME: INICIO SECCION DESTACADOS -->
 
     <section id="destacadosVinos">
-      <p class="tituloSeccionDestacado">Vinos Destacados</p>
+      <h1 class="tituloSeccionDestacado">Vinos Destacados</h1>
       <hr class="misc gray-misc">
       <div class="contenidoSeccion">
         <div class="cuadroImageSeccion">
@@ -167,38 +167,15 @@
     </section>
     <!-- HOME:MUESTRA BODEGAS -->
     <section id="bodegasHome">
-      <div class="contenedorBodegasHome">
-        <div class="cuadro-wrapper">
-          <div class="card text-bg-dark">
-            <img src="#" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-
-        </div>
+      <h1 class="tituloSeccionDestacado">Nuestras Bodegas Favoritas</h1>
+      <div class="fondobodegasHome">
+        <div class="contenedorBodegasHome" id="contenedorBodegasHome"></div>
       </div>
-      <div class="cuadro-wrapper">
-        <div class="card text-bg-dark">
-          <img src="#" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-
-      </div>
-
     </section>
 
     <!-- SECCION DE TIPOS DE VINOS -->
     <section class="tarjetas">
-      <p class="tituloSeccionDestacado" id="vinosSeccion"></p>
+      <h1 class="tituloSeccionDestacado" id="vinosSeccion"></h1>
       <hr class="misc gray-misc" id="linea">
       <div class="row row-cols-auto" id="tarjetas"></div>
     </section>
@@ -210,11 +187,8 @@
         <div id="compras" class="row row-cols-auto"></div>
         <div id="carrito">
           <div class="carrito">
-            <div class="carrito-header">
-              <p>Tu Pedido</p>
-            </div>
+            <div class="carrito-header"><p>Tu Pedido</p></div>
             <div class="carrito-items" id="tuPedido"></div>
-
             <div class="carrito-footer" id="final"></div>
           </div>
         </div>
@@ -223,11 +197,11 @@
 
     <!-- SECCION NOSOTROS -->
     <section class="nosotros" id="nosotros">
-      <p>NOSOTROS</p>
+      <h1 class="tituloSeccionDestacado">Nosotros</h1>
       <p>Somos una comunidad de apasionados por el vino. Deseamos que puedas elegir la mejor bebida para disfrutar en
         cada ocasión.</p>
       <div class="expertos">
-        <p>Comprá guiado por expertos</p>
+        <h3>Comprá guiado por expertos</h3>
         <div class="contenedor-expertos">
           <div class="nosotros-img-content"><img
               src="https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2Fyormaris.jpg?alt=media&token=a82d7b54-e6d1-4ba5-8a9d-f12f34f7afbf"
@@ -248,7 +222,7 @@
 
 
       <div class="opiniones">
-        <p>Nuestros clientes opinan</p>
+        <h3>Nuestros clientes opinan</h3>
         <div class="contenedorClientes">
           <div class="card card-clientes">
             <div class="card-body">
@@ -311,23 +285,27 @@
 
     <!-- SECCION BODEGAS -->
     <section class="bodegas" id="seccionBodegas">
-      <p class="tituloSeccionDestacado" id="vinosSeccion"></p>
+      <h1 class="tituloSeccionDestacado" id="vinosSeccion"></h1>
       <hr class="misc gray-misc" id="linea">
-
     </section>
 
     <!-- SECCION CONTACTO -->
 
     <section id="seccionContacto">
       <h1 class="contact">Contactanos</h1>
-
       <div class="formulario" id="formulario"></div>
-   
-      <div class="saludo" id="saludo"></div>
+    </section>
+
+    <!-- SECCION GIFTCARD -->
+    <section id="Secciongiftcard">
+      <h1 class="titulo">Obten una GiftCard</h1>
+      <div class="formulario" id="giftcardForm"></div>
+      <div id="giftcardTarjeta"> </div>
+
     </section>
 
   </main>
-
+<!-- FOOTER -->
   <footer class="footer" id="contacto">
     <div class="footer-contain">
       <div class="footer-content">
@@ -356,7 +334,7 @@
         </div>
         <p>Atention de Lunes a Viernes de 9a 18hs</p>
         <p>001000000</p>
-       
+
       </div>
       <div class="footer-content2">
         <div class="categoria-footer">
@@ -365,14 +343,13 @@
           </div>
           <div class="footer-content2-link">
             <a class="ir" href="#" id="enlaceVinos">Nuestros Vinos</a>
-            <a class="ir" href="#" id="enlacePromociones">Promociones</a>
             <a class="ir" href="#" id="enlaceCompras">Hacer Pedido</a>
             <a class="ir" href="#" id="enlaceGift">Obtener una GiftCard</a>
           </div>
         </div>
         <div class="ayuda-footer">
           <div class="footer-titulo">
-            <h4>Ayuda</h4>
+            <h3>Ayuda</h3>
           </div>
           <div class="footer-content2-link">
             <a class="ir" href="#" id="enlaceNosotros">Nosotros</a>
@@ -382,13 +359,13 @@
       </div>
       <div class="pago-footer">
         <div class="footer-titulo">
-          <h3>FORMAS DE PAGO</h3>
+          <h3>Formas de Pago</h3>
         </div>
-      
-          <i class="fa-solid fa-credit-card"></i>
-        
-          <i class="fa-brands fa-cc-mastercard"></i>
-          
+
+        <i class="fa-solid fa-credit-card"></i>
+
+        <i class="fa-brands fa-cc-mastercard"></i>
+
       </div>
     </div>
     <div class="copyright">
@@ -397,7 +374,7 @@
       <p>Terminos & Condiciones</p>
       <p>Politica de Privacidad</p>
     </div>
-  </footer> 
+  </footer>
 
 
 
@@ -443,6 +420,7 @@
   <script src="./archivosJavaS/compras.js"></script>
   <script src="./archivosJavaS/bodega.js"></script>
   <script src="./archivosJavaS/contacto.js"></script>
+  <script src="./archivosJavaS/gifcard.js"></script>
 </body>
 
 </html>

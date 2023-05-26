@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .contact {
     color: #B1A303;
@@ -13,7 +14,9 @@
     text-align: center;
     justify-content: center;
 }
-
+#saludo{
+    display:none;
+}
 .formulario {
 
     box-sizing: border-box;

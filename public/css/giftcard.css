@@ -1,0 +1,64 @@
+#Secciongiftcard{
+    width:70%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.titulo{
+    color: #B1A303;
+}
+.carta{
+    margin-top: 60px;
+    width:400px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorGift{
+    width: 60%;
+   height: 100%;
+}
+.contenedorGift>img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.contenidoRegalo{
+    background-color: white;
+    width:40%;
+   height: 100%;
+   margin-left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+  
+}
+.textoGiftCard{
+    text-align: center;
+    font-weight: bold;
+}
+.NombreGift{
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+    color: #B1A303;
+}
+.botongift{
+    margin-top: 20px;
+    background-color: #B1A303;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#giftcardTarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

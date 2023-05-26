@@ -24,12 +24,14 @@ header {
     left: 0;
     top:0; */
 }
+
 .nav-pills .nav-link.active {
     --bs-nav-pills-link-active-bg: #EFC2C0;
     --bs-nav-pills-link-active-color: black;
-} 
-.nav{
-    --bs-nav-link-color:black;
+}
+
+.nav {
+    --bs-nav-link-color: black;
 }
 
 
@@ -210,9 +212,11 @@ main {
     z-index: 10;
     font-size: 1.1em;
 }
+
 .hidden {
     display: none !important;
-  }
+}
+
 /* CONTENIDO DE LA PAGINA */
 .btn {
     background-color: #8b0000;
@@ -260,10 +264,11 @@ main {
     box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 13px 3px -6px rgba(0, 0, 0, 0.75);
-  
-    
+
+
 }
-.card:hover{
+
+.card:hover {
     scale: 1.05;
 }
 
@@ -273,7 +278,7 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
-   top:0;
+    top: 0;
     left: 0%;
     z-index: 3;
     width: 0px;
@@ -285,6 +290,7 @@ main {
     color: antiquewhite;
     text-align: center;
 }
+
 .card-body {
     height: 50%;
     display: flex;
@@ -356,8 +362,7 @@ main {
 }
 
 .tituloSeccionDestacado {
-    font-size: 1.5em;
-    font-weight: bolder;
+    color: #B1A303;
 }
 
 p {
@@ -367,14 +372,15 @@ p {
 .misc {
     background: none;
     border: none;
-    border-top-width: 4px;
+    border-top-width: 3.5px;
     border-top-style: solid;
     width: 300px;
     margin: 0.5em auto;
 }
 
 .gray-misc {
-    border-top-color: #8b0000;
+    border-top-color: #f8e402;
+    ;
 }
 
 .contenidoSeccion {
@@ -441,7 +447,7 @@ p {
     border: solid 2px rgba(0, 0, 0, 0.225);
     border-radius: 10px;
     align-items: center;
-    
+
 }
 
 .image-wrapper {
@@ -475,32 +481,63 @@ p {
     border: burlywood;
     color: black;
 }
+
 /* BODEGAS EN HOME */
-#bodegasHome{
-    display:flex;
-    flex-direction: row;
+#bodegasHome {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     height: auto;
-    background-color: #B1A303;
+    margin-top: 60px;
 }
 
-.cuadro-wrapper{
-width: 90%;
-background-color: blueviolet;
+.fondobodegasHome {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2Fpexels-laker-5732806.jpg?alt=media&token=b1ca9791-a9ce-4cc4-becf-fcac804f7d20);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
 }
+
+.contenedorBodegasHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.cardBodegaHome {
+    margin: 1% 1%;
+    width: calc(90%/3);
+    height: 200px;
+    border: none;
+    background-color: rgba(18, 18, 19, 0.521);
+}
+.cardBodegaHome>img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .btn-destacado:hover {
     background-color: #8b0000;
     border-color: #8b0000;
     color: white;
 }
-.botonesDetalles{
+
+.botonesDetalles {
     line-height: 1 !important;
     text-align: center;
 }
 
-#btncompras{
+#btncompras {
     position: fixed;
-    bottom:300px;
+    bottom: 300px;
     right: 20px;
     font-size: 1.5em;
     border: none;
@@ -510,10 +547,31 @@ background-color: blueviolet;
     border-radius: 50%;
     z-index: 4;
 }
+
 /*TRABAJANDO EN EL FOOTER*/
+.social-media-icon {
+
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 20px;
+    border: solid;
+    display: inline-block;
+    text-align: center;
+    background-color: #B1A303;
+
+}
+
+.social-media-icon i {
+    font-size: 15px;
+    line-height: 25px #B1A303;
+    ;
+
+}
 
 .footer {
     width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -523,8 +581,8 @@ background-color: blueviolet;
 
 .footer-contain {
     display: flex;
-    gap: 80px;
-    padding: 40px;
+    gap: 150px;
+    padding: 80px;
 }
 
 .footer-content {
@@ -535,7 +593,7 @@ background-color: blueviolet;
 
 .mail-footer {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 .footer-content2 {
@@ -549,6 +607,17 @@ background-color: blueviolet;
 }
 
 
+.footer-titulo {
+    color: #B1A303;
+
+}
+
+.fa-envelope {
+    color: white;
+    background-color: #B1A303;
+}
+
+
 .copyright {
     width: 100%;
     display: flex;
@@ -559,4 +628,9 @@ background-color: blueviolet;
     align-items: center;
     gap: 15px;
     font-style: italic;
+}
+
+.footer-content2-link a {
+    list-style: none;
+    color: white;
 }

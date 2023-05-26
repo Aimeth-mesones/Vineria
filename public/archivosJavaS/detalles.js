@@ -90,6 +90,6 @@ function displayDetalle(id) {
     htmlDetalle.style.display = "flex"
     htmlDetalle.innerHTML = contenidoDetalle
     document.getElementById("tarjetas").style.display = "none"
-
+    document.getElementById("elementoBusqueda").style.visibility="hidden"
 }
 

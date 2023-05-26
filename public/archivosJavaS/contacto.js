@@ -1,9 +1,16 @@
-let datosForm
-function construyeFormulario(){
+let datosForm={}
 
-   var formularioContacto = document.getElementById("formulario")  
-   formularioContacto.innerHTML =
-  `
+function formularioInit(){
+
+  construyeFormulario()
+  console.log("inicie el formulario")
+  console.log(datosForm)
+}
+function construyeFormulario() {
+
+  var formularioContacto = document.querySelector("#formulario")
+  formularioContacto.innerHTML =
+    `
 <form id="formContacto">
 <label for="tunombre">Nombre</label>
 <input type="text" id="tunombre" name="tunombre" placeholder="ingrese nombre y apellido">
@@ -21,41 +28,40 @@ function construyeFormulario(){
 <input type="submit" value="Enviar">
 </form>
 `
-    
+  let formContacto = document.querySelector("#formContacto")
+  formContacto.addEventListener("submit", function (evento) { capturaDatosContacto(evento) })
 }
 
 
-     
-function capturaDatosContacto(evento){
-   evento.preventDefault()
-   console.log(evento)
 
-        datosForm ={
-        nombre: evento.target[0].value,
-          email: evento.target[1].value,
-          telefono:evento.target[2].value,
-          mensaje: evento.target[3].value,    
-       }
-          console.log(datosForm)
-  saludo(datosForm)
+function capturaDatosContacto(evento) {
+  evento.preventDefault()
+
+
+  datosForm = {
+    nombre: evento.target[0].value,
+    email: evento.target[1].value,
+    telefono: evento.target[2].value,
+    mensaje: evento.target[3].value,
+  }
+  console.log(datosForm)
+  
+  saludo()
+  limpiarFormulario()
 }
- 
 
 
- var saludoHtml = document.getElementById("saludo")
-   
- saludoHtml.style.display = "none"
- 
-    function saludo(datosForm) {
+function saludo() {
   
-      formulario.style.display = "none"
-      saludoHtml.style.display = "flex"
-      saludoHtml.innerHTML =
-      `
-      <h1>Gracias ${datosForm.nombre} por dejarnos tu comentario</h1>
-      `
-    }  
-  
-        
+    alert("¡Formulario enviado!")
+  }
+
+function limpiarFormulario() {
+  document.getElementById("tunombre").value = ""
+  document.getElementById("tuemail").value = ""
+  document.getElementById("tutelefono").value = ""
+  document.getElementById("tumensaje").value = ""
+}
+
 
 
