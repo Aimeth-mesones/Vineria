@@ -53,7 +53,7 @@ function capturaDatosContacto(evento) {
 
 function saludo() {
   
-    alert("¡Formulario enviado!")
+    alert("¡Envio Exitoso!")
   }
 
 function limpiarFormulario() {

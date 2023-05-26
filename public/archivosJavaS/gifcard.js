@@ -74,7 +74,7 @@ function envioRegalo(){
     
 }
 function saludo() {
-    alert("¡Regalo enviado!")
+    alert("¡Envio Exitoso!")
   }
 
   function limpiarFormulario() {

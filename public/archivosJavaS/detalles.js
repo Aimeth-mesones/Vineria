@@ -1,6 +1,5 @@
 function displayDetalle(id) {
-    console.log(id)
-    console.log(vinos)
+   
 
     var detalleVino = []
 
@@ -10,7 +9,6 @@ function displayDetalle(id) {
 
         }
     }
-    console.log(detalleVino)
 
     var contenidoDetalle
     contenidoDetalle =
@@ -91,5 +89,7 @@ function displayDetalle(id) {
     htmlDetalle.innerHTML = contenidoDetalle
     document.getElementById("tarjetas").style.display = "none"
     document.getElementById("elementoBusqueda").style.visibility="hidden"
+    document.getElementById("seccionContacto").style.display = "none"
+    document.getElementById("vinosSeccion").style.display = "none"
 }
 

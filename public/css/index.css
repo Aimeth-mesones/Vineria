@@ -152,15 +152,18 @@ main {
 .tituloCarousel {
     font-size: 2em;
     font-weight: bold;
+    
 }
 
 .tituloDosCarousel {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
+    font-family: 'Cookie', cursive;
 }
 
 .tituloTresCarousel {
     font-size: 1.2em;
+    text-align: center;
 }
 
 .contenidoCarouselDos {
@@ -363,6 +366,7 @@ main {
 
 .tituloSeccionDestacado {
     color: #B1A303;
+    font-family: 'Cookie', cursive;
 }
 
 p {
@@ -398,24 +402,40 @@ p {
     width: 40%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items:center;
+    border-radius: 10px;
 }
 
 .contImgSeccion {
     width: 50%;
     height: 95%;
     background-image: url(../multimedia/destacadavinos.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
-
+.textoSecDest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 95%;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: 2em;
+}
 .infoSeccion {
     width: 60%;
     height: 100%;
 }
-
+.card-title{
+    color:#B1A303;
+    font-size: 1.5em;
+}
 .carousel-dark {
     height: 100%;
 }
@@ -486,7 +506,9 @@ p {
 #bodegasHome {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: auto;
     margin-top: 60px;
 }
@@ -495,7 +517,7 @@ p {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 600px;
+    height: auto;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2Fpexels-laker-5732806.jpg?alt=media&token=b1ca9791-a9ce-4cc4-becf-fcac804f7d20);
     background-repeat: no-repeat;
     background-size: cover;
@@ -513,17 +535,54 @@ p {
 }
 
 .cardBodegaHome {
-    margin: 1% 1%;
-    width: calc(90%/3);
-    height: 200px;
+    margin: 15px 15px;
+    width: calc(100%/4);
+    height: 150px;
     border: none;
     background-color: rgba(18, 18, 19, 0.521);
 }
 .cardBodegaHome>img{
     min-width: 100%;
     min-height: 100%;
+    padding: 20px;
 }
 
+.NoticiasSecc{
+    margin-top: 50px;
+    width:80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CardNoticias_content{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-noticias{
+    width: calc(100%/3);
+    margin:5px 10px;
+    height: 360px;
+}
+.contenedorImagen{
+    width: 100%;
+height: 60%;
+}
+.contenedorImagen>img{
+    max-height: 100%;
+    min-width: 100%;
+}
+.body-noticias{
+    width: 100%;
+    height: 20%;
+   margin: 3px;
+}
 .btn-destacado:hover {
     background-color: #8b0000;
     border-color: #8b0000;

@@ -14,11 +14,11 @@
 
 }
 .expertos{
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 30px;
 }
 .contenedor-expertos{
     width:100%;
@@ -50,6 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .contenedorClientes{
     width:100%;

@@ -9,11 +9,11 @@ function mostrarbodegas(bodegas){
       <div class="card card-bodega">
         <img src="${bodegas[i].imagenBodega}" class="card-img-top" alt="${bodegas[i].nombre}">
         <div class="card-body body-bodegas">
-          <h5 class="card-title">${bodegas[i].nombre}</h5>
+          <h5 class="card-title titulo-bodegas">${bodegas[i].nombre}</h5>
           <p class="card-text textoBodega">${bodegas[i].info}</p>
           <p class="card-text textoBodega">Ubicacion: ${bodegas[i].ubicacion}</p>
           <div>
-            <a href="${bodegas[i].web}" class="card-link textoBodega">Ir al Sitio Web</a>
+            <a href="${bodegas[i].web}" target="_blank" class="card-link textoBodega">Ir al Sitio Web</a>
           </div>
         </div>
       </div>
