@@ -406,7 +406,7 @@ p {
 .contImgSeccion {
     width: 50%;
     height: 95%;
-    background-image: url(../multimedia/destacadavinos.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/images%2Fpexels-adonyi-g%C3%A1bor-1479706.jpg?alt=media&token=69a50ecf-b305-4261-a15f-49b80e47b308);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -596,8 +596,8 @@ height: 60%;
 
 #btncompras {
     position: fixed;
-    bottom: 300px;
-    right: 20px;
+    bottom: 20vh;
+    left: 20px;
     font-size: 1.5em;
     border: none;
     background-color: burlywood;
