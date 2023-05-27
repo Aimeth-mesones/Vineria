@@ -55,9 +55,6 @@ function displaycompras(vinos) {
       cantidadProducto = e.target.value
       calculadora(e.target.id)
       calculoGeneral()
-      // displayCarrito()
-     
-     
       
     })
   }
@@ -67,7 +64,6 @@ var totalItem = 0
 function calculadora(id) {
   console.log("cantidad", cantidadProducto)
   var idSel = id.split("cantidad").filter(Number)
-  // console.log(idSel)
   var idSelected = idSel[0]
   console.log("id", idSelected)
   
@@ -82,13 +78,10 @@ function calculadora(id) {
       
     }
 
-  
-  console.log("totalItem", totalItem)
-  console.log(carrito)
+
 
   var read = "totalInput"
   var newread = read + idSelected
-  console.log(newread)
 
   var inputTotal = document.getElementById(newread);
   inputTotal.value = totalItem;
@@ -107,16 +100,15 @@ function calculoGeneral() {
       totalGeneral += total;
     }
   }
-  console.log("total compra")
-  console.log(totalGeneral)
+
  var elemento= document.getElementById("final")
- console.log(elemento)
+
  elemento.innerHTML=`<p>Total Pedido: $${totalGeneral}`
 }
 
 
 function displayCarrito() {
-  console.log(carrito)
+  
   // let listaCarro = carrito.map(item => item.id)
 
   // let listaCarroUnica = new Set(listaCarro)
