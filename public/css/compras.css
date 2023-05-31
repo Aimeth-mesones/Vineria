@@ -177,3 +177,116 @@
 .oculto{
     display: none !important;
 }
+
+@media only screen and (min-width:320px) and (max-width: 480px){
+    .contenedor-compras{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #compras{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .col-compras{
+        width:60%;
+        height:300px;
+    }
+    #carrito{
+        width: 100%;    
+    }
+.carrito-header{
+    font-size: 1em;
+    width:100%;
+   padding: 12px 0;}
+   .carrito-item{
+    height: 100px;
+    padding: 0;
+   }
+   .cont-carritoImage{
+    width:20%;
+    height: 80%;
+    margin-right: 10px;
+   }
+   .carrito-footer{
+    font-size: 1.2em;
+   padding: 6px 0;
+   }
+
+}
+@media only screen and (min-width:481px)and (max-width: 768px){
+    .contenedor-compras{
+        flex-direction: column;
+        align-items: center;
+
+    }
+  
+    #compras{
+        width: 100%;
+        align-items: center;
+    }
+    .contenedor-compras>.row .row-cols-auto{
+    width: 100%;
+    
+}
+    .col-compras{
+        width:calc(100%/2);
+        height:300px;
+        padding: 0;
+    }
+    #carrito{
+        width: 100%;    
+    }
+.carrito-header{
+    font-size: 1.2em;
+    width:100%;
+   padding: 12px 0;}
+   .carrito-item{
+    height: 100px;
+    padding: 0;
+   }
+   .cont-carritoImage{
+    width:20%;
+    height: 80%;
+    margin-right: 10px;
+   }
+   .carrito-footer{
+    font-size: 1.2em;
+   padding: 6px 0;
+   }
+}
+@media only screen and (min-width: 769px) and (max-width:1200px){
+     
+    #compras{
+        width: 60%;
+        align-items: center;
+    }
+    .contenedor-compras>.row .row-cols-auto{
+    width: 100%;
+    
+}
+    .col-compras{
+        width:calc(100%/2);
+        height:300px;
+        padding: 0;
+    }
+    #carrito{
+        width: 40%;    
+    }
+.carrito-header{
+    width:100%;
+   padding: 12px 0;}
+   .carrito-item{
+    height: 100px;
+    padding: 0;
+   }
+   .cont-carritoImage{
+    width:25%;
+    margin-right: 10px;
+   }
+   .carrito-footer{
+    font-size: 1.2em;
+   }
+}

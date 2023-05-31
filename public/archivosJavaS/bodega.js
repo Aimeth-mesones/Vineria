@@ -1,6 +1,6 @@
 function mostrarbodegas(bodegas){
   console.log(bodegas)
-    var htmlBodegas = "";
+    var htmlBodegas = " ";
     for (var i = 0; i < bodegas.length; i++) {
     
       htmlBodegas += `  
@@ -18,7 +18,6 @@ function mostrarbodegas(bodegas){
         </div>
       </div>
        `
-
     }
   document.getElementById("seccionBodegas").innerHTML=htmlBodegas
 document.getElementById("vinosSeccion").innerHTML="Nuestras Bodegas Favoritas"}

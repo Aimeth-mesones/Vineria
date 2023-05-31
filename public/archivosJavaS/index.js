@@ -124,131 +124,130 @@ function navegacion(id) {
   switch (id) {
     case "bodegas":
       console.log("estoy en bodegas")
-      document.getElementById("seccionBodegas").style.display = "flex",
-        document.getElementById("tituloSeccion").innerHTML = "Nuestras Bodegas Favoritas",
-        document.getElementById("carouselAuto").style.display = "none",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("detalles").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "flex",
-        document.getElementById("linea").style.display = "none",
-        document.getElementById("tarjetas").style.display = "none",
-        document.getElementById("nosotros").style.display = "none",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("Noticias").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "flex"
+      document.getElementById("tituloSeccion").innerHTML = "Nuestras Bodegas Favoritas"
+      document.getElementById("carouselAuto").style.display = "none"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("vinosSeccion").style.display = "flex"
+      document.getElementById("linea").style.display = "none"
+      document.getElementById("tarjetas").style.display = "none"
+      document.getElementById("nosotros").style.display = "none"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("Noticias").style.display = "none"
       document.getElementById("elementoBusqueda").style.visibility = "hidden"
       mostrarbodegas(bodegas)
-
       break;
 
     case "vinos":
-      console.log("todos los vinos"),
-        console.log(vinos)
-      document.getElementById("carouselAuto").style.display = "none",
-        document.getElementById("tarjetas").style.display = "flex",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "flex",
-        document.getElementById("linea").style.display = "flex",
-        document.getElementById("vinosSeccion").innerHTML = "Nuestros Vinos",
-        document.getElementById("detalles").style.display = "none",
-        document.getElementById("btncompras").style.visibility = "visible",
-        document.getElementById("nosotros").style.display = "none",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("seccionBodegas").style.display = "none",
-        document.getElementById("elementoBusqueda").style.visibility = "visible"
+      console.log("todos los vinos")
+      console.log(vinos)
+      document.getElementById("carouselAuto").style.display = "none"
+      document.getElementById("tarjetas").style.display = "flex"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("vinosSeccion").style.display = "flex"
+      document.getElementById("linea").style.display = "flex"
+      document.getElementById("vinosSeccion").innerHTML = "Nuestros Vinos"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("btncompras").style.visibility = "visible"
+      document.getElementById("nosotros").style.display = "none"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "none"
+      document.getElementById("elementoBusqueda").style.visibility = "visible"
       document.getElementById("Noticias").style.display = "none"
       display(vinos),
         arrayBusqueda = vinos
       break;
     case "tintos":
-      display(vinosTintos),
-        document.getElementById("carouselAuto").style.display = "none",
-        document.getElementById("tarjetas").style.display = "flex",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").innerHTML = "Vinos Tintos",
-        document.getElementById("btncompras").style.visibility = "visible",
-        document.getElementById("detalles").style.display = "none",
-        document.getElementById("nosotros").style.display = "none",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("seccionBodegas").style.display = "none",
-        document.getElementById("elementoBusqueda").style.visibility = "visible"
+      display(vinosTintos)
+      document.getElementById("carouselAuto").style.display = "none"
+      document.getElementById("tarjetas").style.display = "flex"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("vinosSeccion").innerHTML = "Vinos Tintos"
+      document.getElementById("btncompras").style.visibility = "visible"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("nosotros").style.display = "none"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "none"
+      document.getElementById("elementoBusqueda").style.visibility = "visible"
       document.getElementById("Noticias").style.display = "none"
-      arrayBusqueda = vinosTintos,
-        console.log("vinos tintos")
+      arrayBusqueda = vinosTintos
+      console.log("vinos tintos")
       break;
     case "blancos":
       display(vinosBlancos),
-        document.getElementById("carouselAuto").style.display = "none",
-        document.getElementById("tarjetas").style.display = "flex",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "flex",
-        document.getElementById("linea").style.display = "flex",
-        document.getElementById("vinosSeccion").innerHTML = "Vinos Blancos",
-        document.getElementById("detalles").style.display = "none",
-        document.getElementById("btncompras").style.visibility = "visible",
-        document.getElementById("nosotros").style.display = "none",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("seccionBodegas").style.display = "none",
-        document.getElementById("elementoBusqueda").style.visibility = "visible"
+        document.getElementById("carouselAuto").style.display = "none"
+      document.getElementById("tarjetas").style.display = "flex"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("vinosSeccion").style.display = "flex"
+      document.getElementById("linea").style.display = "flex"
+      document.getElementById("vinosSeccion").innerHTML = "Vinos Blancos"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("btncompras").style.visibility = "visible"
+      document.getElementById("nosotros").style.display = "none"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "none"
+      document.getElementById("elementoBusqueda").style.visibility = "visible"
       document.getElementById("Noticias").style.display = "none"
-      arrayBusqueda = vinosBlancos,
-        console.log("vinos blancos")
+      arrayBusqueda = vinosBlancos
+      console.log("vinos blancos")
       break;
     case "espumantes":
       display(vinosEspumantes),
-        document.getElementById("carouselAuto").style.display = "none",
-        document.getElementById("tarjetas").style.display = "flex",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "flex",
-        document.getElementById("linea").style.display = "flex",
-        document.getElementById("vinosSeccion").innerHTML = "Vinos Espumantes",
-        document.getElementById("detalles").style.display = "none",
-        arrayBusqueda = vinosEspumantes,
-        document.getElementById("btncompras").style.visibility = "visible",
-        document.getElementById("nosotros").style.display = "none",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("seccionBodegas").style.display = "none",
-        console.log("vinos espumantes")
+        document.getElementById("carouselAuto").style.display = "none"
+      document.getElementById("tarjetas").style.display = "flex"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("vinosSeccion").style.display = "flex"
+      document.getElementById("linea").style.display = "flex"
+      document.getElementById("vinosSeccion").innerHTML = "Vinos Espumantes"
+      document.getElementById("detalles").style.display = "none"
+      arrayBusqueda = vinosEspumantes
+      document.getElementById("btncompras").style.visibility = "visible"
+      document.getElementById("nosotros").style.display = "none"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "none"
+      console.log("vinos espumantes")
       document.getElementById("elementoBusqueda").style.visibility = "visible"
       document.getElementById("Noticias").style.display = "none"
       break;
 
     case "enlaceContacto":
       formularioInit()
-      document.getElementById("seccionContacto").style.display = "flex",
-        document.getElementById("tarjetas").style.display = "none",
-        document.getElementById("carouselAuto").style.display = "none",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("detalles").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "none",
-        document.getElementById("linea").style.display = "none",
-        document.getElementById("btncompras").style.visibility = "hidden",
-        document.getElementById("nosotros").style.display = "none",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("seccionBodegas").style.display = "none"
+      document.getElementById("seccionContacto").style.display = "flex"
+      document.getElementById("tarjetas").style.display = "none"
+      document.getElementById("carouselAuto").style.display = "none"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("vinosSeccion").style.display = "none"
+      document.getElementById("linea").style.display = "none"
+      document.getElementById("btncompras").style.visibility = "hidden"
+      document.getElementById("nosotros").style.display = "none"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "none"
       document.getElementById("Secciongiftcard").style.display = "none"
       document.getElementById("elementoBusqueda").style.visibility = "hidden"
       document.getElementById("Noticias").style.display = "none"
       break;
     case "enlaceNosotros":
-      document.getElementById("nosotros").style.display = "flex",
-        document.getElementById("seccionContacto").style.display = "none",
-        document.getElementById("tarjetas").style.display = "none",
-        document.getElementById("carouselAuto").style.display = "none",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("detalles").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "none",
-        document.getElementById("linea").style.display = "none",
-        document.getElementById("btncompras").style.visibility = "hidden",
-        document.getElementById("nosotros").style.display = "flex",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("seccionBodegas").style.display = "none"
+      document.getElementById("nosotros").style.display = "flex"
+      document.getElementById("seccionContacto").style.display = "none"
+      document.getElementById("tarjetas").style.display = "none"
+      document.getElementById("carouselAuto").style.display = "none"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("vinosSeccion").style.display = "none"
+      document.getElementById("linea").style.display = "none"
+      document.getElementById("btncompras").style.visibility = "hidden"
+      document.getElementById("nosotros").style.display = "flex"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "none"
       document.getElementById("Secciongiftcard").style.display = "none"
       document.getElementById("elementoBusqueda").style.visibility = "hidden"
       document.getElementById("Noticias").style.display = "none"
@@ -258,23 +257,23 @@ function navegacion(id) {
       compras()
       document.getElementById("bodegasHome").style.display = "none"
       document.getElementById("elementoBusqueda").style.visibility = "hidden"
-      document.getElementById("detalles").style.display = "none",
-        document.getElementById("Noticias").style.display = "none"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("Noticias").style.display = "none"
       document.getElementById("Secciongiftcard").style.display = "none"
 
       break;
     case "enlaceVinos":
       display(vinos),
         arrayBusqueda = vinos,
-        document.getElementById("tarjetas").style.display = "flex",
-        document.getElementById("destacadosVinos").style.display = "none",
-        document.getElementById("bodegasHome").style.display = "none",
-        document.getElementById("carouselAuto").style.display = "none"
+        document.getElementById("tarjetas").style.display = "flex"
+      document.getElementById("destacadosVinos").style.display = "none"
+      document.getElementById("bodegasHome").style.display = "none"
+      document.getElementById("carouselAuto").style.display = "none"
       document.getElementById("btncompras").style.visibility = "hidden"
       document.getElementById("seccionCompras").style.display = "none"
       document.getElementById("elementoBusqueda").style.visibility = "visible"
-      document.getElementById("detalles").style.display = "none",
-        document.getElementById("Noticias").style.display = "none"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("Noticias").style.display = "none"
       document.getElementById("Secciongiftcard").style.display = "none"
       document.getElementById("seccionContacto").style.display = "none"
       document.getElementById("nosotros").style.display = "none"
@@ -283,8 +282,8 @@ function navegacion(id) {
     case "enlaceGift":
       displayFormularioGift()
       document.getElementById("Secciongiftcard").style.display = "flex"
-      document.getElementById("tarjetas").style.display = "none",
-        document.getElementById("carouselAuto").style.display = "none",
+      document.getElementById("tarjetas").style.display = "none"
+      document.getElementById("carouselAuto").style.display = "none",
         document.getElementById("destacadosVinos").style.display = "none"
       document.getElementById("bodegasHome").style.display = "none"
       document.getElementById("elementoBusqueda").style.visibility = "hidden"
@@ -295,26 +294,23 @@ function navegacion(id) {
       document.getElementById("seccionCompras").style.display = "none"
       break;
     default:
-      document.getElementById("tarjetas").style.display = "none",
-        document.getElementById("carouselAuto").style.display = "flex",
-        document.getElementById("destacadosVinos").style.display = "flex",
-        document.getElementById("detalles").style.display = "none",
-        document.getElementById("seccionCompras").style.display = "none",
-        document.getElementById("vinosSeccion").style.display = "none",
-        document.getElementById("linea").style.display = "none",
-        document.getElementById("btncompras").style.visibility = "visible",
-        document.getElementById("nosotros").style.display = "none",
-        document.getElementById("seccionContacto").style.display = "none",
-        document.getElementById("seccionBodegas").style.display = "none"
+      document.getElementById("tarjetas").style.display = "none"
+      document.getElementById("carouselAuto").style.display = "flex"
+      document.getElementById("destacadosVinos").style.display = "flex"
+      document.getElementById("detalles").style.display = "none"
+      document.getElementById("seccionCompras").style.display = "none"
+      document.getElementById("vinosSeccion").style.display = "none"
+      document.getElementById("linea").style.display = "none"
+      document.getElementById("btncompras").style.visibility = "visible"
+      document.getElementById("nosotros").style.display = "none"
+      document.getElementById("seccionContacto").style.display = "none"
+      document.getElementById("seccionBodegas").style.display = "none"
       document.getElementById("Secciongiftcard").style.display = "none"
       document.getElementById("elementoBusqueda").style.visibility = "hidden"
       document.getElementById("bodegasHome").style.display = "flex"
       document.getElementById("Noticias").style.display = "flex"
       displayBodegasHome(bodegas)
-
-
       console.log("estoy en home")
-
   }
 }
 

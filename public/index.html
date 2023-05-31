@@ -152,7 +152,7 @@
             <p>Traemos para ti una seleccion de nuestros vinos preferidos, exquisitos y económicos</p>
           </div>
         </div>
-        <div class="infoSeccion" style="background-color: white">
+        <div class="infoSeccion">
           <div id="carouselExampleAutoplaying" class="carousel slide carousel-dark" data-bs-ride="carousel">
             <div class="carousel-inner innerDestacado">
               <div class="carousel-item item-destacado active">
@@ -261,10 +261,10 @@
     <!-- SECCION NOSOTROS -->
     <section class="nosotros" id="nosotros">
       <h1 class="tituloSeccionDestacado">Nosotros</h1>
-      <p>Somos una comunidad de apasionados por el vino. Deseamos que puedas elegir la mejor bebida para disfrutar en
+      <p style="text-align: justify;">Somos una comunidad de apasionados por el vino. Deseamos que puedas elegir la mejor bebida para disfrutar en
         cada ocasión.</p>
       <div class="expertos">
-        <h3>Comprá guiado por expertos</h3>
+        <h5>Comprá guiado por expertos</h5>
         <div class="contenedor-expertos">
           <div class="nosotros-img-content"><img
               src="https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2Fyormaris.jpg?alt=media&token=a82d7b54-e6d1-4ba5-8a9d-f12f34f7afbf"
@@ -276,7 +276,7 @@
               src="https://firebasestorage.googleapis.com/v0/b/vinoteca-5d1cd.appspot.com/o/multimedia%2Fimages%2Fvictoria.jpeg?alt=media&token=c6dffefe-cbfd-4b35-858f-15056b3176d7"
               alt="Victoria"></div>
         </div>
-        <p>Ofrecemos una experiencia de compra en línea completamente simple y segura. Realizamos envíos totalmente
+        <p style="text-align: justify;">Ofrecemos una experiencia de compra en línea completamente simple y segura. Realizamos envíos totalmente
           gratuitos rápidos a todo CABA y GBA. Trabajamos día a día para ofrecer el mejor servicio de atención y la
           mayor
           variedad de productos a precios
@@ -285,7 +285,7 @@
 
 
       <div class="opiniones">
-        <h3>Nuestros clientes opinan</h3>
+        <h5>Nuestros clientes opinan</h5>
         <div class="contenedorClientes">
           <div class="card card-clientes">
             <div class="card-body">
@@ -461,7 +461,15 @@
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
    
-
+    const firebaseConfig = {
+      apiKey: "AIzaSyCY-84qRk8L_ETv2-B2wa1DxiPBaSx9ODQ",
+      authDomain: "vinoteca-5d1cd.firebaseapp.com",
+      projectId: "vinoteca-5d1cd",
+      storageBucket: "vinoteca-5d1cd.appspot.com",
+      messagingSenderId: "940253088455",
+      appId: "1:940253088455:web:e8701fcc03b3ff0bdecce2",
+      measurementId: "G-K976W2HN9S"
+    };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore()
