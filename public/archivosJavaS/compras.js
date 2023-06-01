@@ -2,13 +2,22 @@ let totalGeneral = 0
 let carrito = []
 function compras() {
   console.log("hice clic e boton compras"),
-  document.getElementById("carouselAuto").style.display = "none",
-  document.getElementById("destacadosVinos").style.display = "none",
-  document.getElementById("seccionCompras").style.display = "flex",
-    document.getElementById("tarjetas").style.display = "none",
-    document.getElementById("vinosSeccion").innerHTML = "Calculadora de Pedidos",
-    displaycompras(vinos),
-    document.getElementById("btncompras").style.visibility="hidden"
+  document.getElementById("carouselAuto").style.display = "none"
+  document.getElementById("destacadosVinos").style.display = "none"
+  document.getElementById("bodegasHome").style.display = "none"
+  document.getElementById("Noticias").style.display = "none"
+  document.getElementById("tarjetas").style.display = "none"
+  document.getElementById("detalles").style.display = "none"
+  document.getElementById("seccionCompras").style.display = "flex"
+  document.getElementById("nosotros").style.display = "none"
+  document.getElementById("seccionBodegas").style.display = "none"
+  document.getElementById("seccionContacto").style.display = "none"
+  document.getElementById("Secciongiftcard").style.display = "none"
+  document.getElementById("elementoBusqueda").style.visibility = "hidden"
+  document.getElementById("btncompras").style.visibility="hidden"
+    document.getElementById("vinosSeccion").innerHTML = "Calculadora de Pedidos"
+    displaycompras(vinos)
+    
 }
 
 let cantidadProducto = 0

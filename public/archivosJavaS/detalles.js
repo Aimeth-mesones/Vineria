@@ -87,9 +87,20 @@ function displayDetalle(id) {
     var htmlDetalle = document.getElementById("detalles")
     htmlDetalle.style.display = "flex"
     htmlDetalle.innerHTML = contenidoDetalle
+
+    document.getElementById("carouselAuto").style.display = "none"
+    document.getElementById("destacadosVinos").style.display = "none"
+    document.getElementById("bodegasHome").style.display = "none"
+    document.getElementById("Noticias").style.display = "none"
     document.getElementById("tarjetas").style.display = "none"
-    document.getElementById("elementoBusqueda").style.visibility="hidden"
+    document.getElementById("detalles").style.display = "none"
+    document.getElementById("seccionCompras").style.display = "none"
+    document.getElementById("nosotros").style.display = "none"
+    document.getElementById("seccionBodegas").style.display = "none"
     document.getElementById("seccionContacto").style.display = "none"
+    document.getElementById("Secciongiftcard").style.display = "none"
+    document.getElementById("elementoBusqueda").style.visibility="hidden"
+    document.getElementById("btncompras").style.visibility="hidden"
     document.getElementById("vinosSeccion").style.display = "none"
 }
 
