@@ -93,7 +93,7 @@ function displayDetalle(id) {
     document.getElementById("bodegasHome").style.display = "none"
     document.getElementById("Noticias").style.display = "none"
     document.getElementById("tarjetas").style.display = "none"
-    document.getElementById("detalles").style.display = "none"
+    document.getElementById("detalles").style.display = "flex"
     document.getElementById("seccionCompras").style.display = "none"
     document.getElementById("nosotros").style.display = "none"
     document.getElementById("seccionBodegas").style.display = "none"
